@@ -1,6 +1,6 @@
 $red: #d44136;
 $black: #1f1912;
-$angle: -90deg;
+$black--light: rgba(0,0,0,0.6);
 
 body {
   margin: 0;  
@@ -8,34 +8,94 @@ body {
   color: $black;
 }
 
-.text--title {  
-  margin: 0;
-  margin-top: 0;
-  font-size: 2em;
-  text-transform: uppercase;
-}
-
-.text--red {
-  color: $red;
+.fluid {
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
-  max-width: 800px;
+  max-width: 840px;
   margin: 0 auto;
+}
+
+.text {
+  &__title {
+    margin: 0;
+    margin-top: 0;
+    font-size: 2em;
+    text-transform: uppercase;
+  }
+  &--space {
+    margin: 50px 0;
+  }
+  &--red {
+    color: $red;
+  }
+}  
+
+.card {
+  display: flex;  
+  margin-bottom: 5rem;  
+  div {
+    flex: 50%;
+  }
+  &__img {    
+    filter: grayscale(1);
+  }
+  &__content {
+    // border-top: 10px solid $red;        
+    padding: 0 25px;
+    text-align: right;
+    a {
+      display: inline-block;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      color: $black--light;
+    }    
+    h3 {
+      line-height: 200%;
+      position: relative;
+      margin: 10px 0;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 14px;
+      &:after {
+        content: "";
+        background: $red;
+        position: absolute;
+        right: 0;
+        bottom: -10px;
+        width: 32px;
+        height: 10px;
+      }
+    }
+  }
+  &:nth-of-type(even) {
+    flex-direction: row-reverse;        
+    .card__content {
+      text-align: left;
+      h3:after {
+        left: 0;
+      }
+    }    
+  }
+  &:hover {
+    .card__img {      
+      filter: grayscale(0);
+    } 
+  }
 }
 
 .header {  
   // outline: 1px dashed blue;
-  margin: 0 auto;  
-  // padding: 20px 0;
+  margin: 0 auto;    
   display: grid;
-  grid-template-columns:  1fr 360px;
+  grid-template-columns:  1fr 380px;
   &__title {    
     // outline: 1px dashed blueviolet;s
     position: relative;    
-    border-right: 50px solid $red;
-    display: inline-block;        
-    text-transform: uppercase;    
+    border-right: 50px solid $red;    
     writing-mode: vertical-rl;
     transform: rotate(180deg);
   }  
@@ -43,14 +103,13 @@ body {
     // outline: 1px dashed orange;        
     letter-spacing: 2px;
     font-size: 18px;
-    max-width: 360px;     
+    max-width: 400px;     
     margin: 20px 0;      
     margin-right: 0;
     text-align: right;    
-    
     a {
       display: inline-block;      
-      margin-right: 1rem;
+      margin-right: 1.25rem;
     }
   }    
 }
@@ -59,6 +118,17 @@ body {
 @media(max-width: 500px) {
   .header {
     grid-template-columns: 110px 1fr;
+  }
+  .card {
+    display: block;
+    &__content {
+      text-align: left;
+      border-top: 0;
+      padding: 10px;
+      h3:after {
+        left: 0;
+      }
+    }
   }
 }
 
