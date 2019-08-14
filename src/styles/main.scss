@@ -75,8 +75,6 @@ body {
     font-family: 'Courier New', Courier, monospace;
   }
   &__content {
-    // border-top: 10px solid $red;        
-    // padding: 0 25px;
     padding-left: 20px;
     text-align: right;
     a {
@@ -162,7 +160,8 @@ body {
     &__content {  
       padding: 0 10px;    
       margin: 0 auto;        
-      margin-top: 50px;        
+      margin-top: 50px;    
+      font-size: 16px;    
     }
   }
 }
