@@ -14,9 +14,12 @@ body {
 }
 
 .container {
-  max-width: 840px;
+  max-width: 920px;
   margin: 0 auto;
+  padding: 0 15px;
 }
+
+
 
 .text {
   &__title {
@@ -32,57 +35,6 @@ body {
     color: $red;  
   }  
 }  
-
-.card {
-  display: flex;  
-  margin-bottom: 5rem;  
-  div {
-    flex: 50%;
-  }
-  &__content {
-    // border-top: 10px solid $red;        
-    padding: 0 25px;
-    text-align: right;
-    a {
-      display: inline-block;
-      margin-bottom: 0.5rem;
-    }
-    p {
-      color: $black--light;
-    }    
-    h3 {
-      line-height: 200%;
-      position: relative;
-      margin: 10px 0;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      font-size: 14px;
-      &:after {
-        content: "";
-        background: $red;
-        position: absolute;
-        right: 0;
-        bottom: -5px;
-        width: 32px;
-        height: 6px;
-      }
-    }
-  }
-  &:nth-of-type(even) {
-    flex-direction: row-reverse;        
-    .card__content {
-      text-align: left;
-      h3:after {
-        left: 0;
-      }
-    }    
-  }
-  &:hover {
-    .card__img {      
-      filter: grayscale(0);
-    } 
-  }
-}
 
 .header {  
   // outline: 1px dashed blue;
@@ -111,6 +63,65 @@ body {
   }    
 }
 
+.card {
+  display: flex;  
+  margin-bottom: 5rem;  
+  div {
+    flex: 50%;
+  }
+  small {
+    color: $red;    
+    font-style: normal;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  &__content {
+    // border-top: 10px solid $red;        
+    // padding: 0 25px;
+    padding-left: 20px;
+    text-align: right;
+    a {
+      display: inline-block;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      line-height: 145%;
+      color: $black--light;
+    }    
+    h3 {
+      line-height: 200%;
+      position: relative;
+      margin: 10px 0;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 14px;
+      &:after {
+        content: "";
+        background: $red;
+        position: absolute;
+        right: 0;
+        bottom: -5px;
+        width: 32px;
+        height: 6px;
+      }
+    }
+  }
+  &:nth-of-type(even) {
+    flex-direction: row-reverse;        
+    .card__content {
+      text-align: left;      
+      padding-left: 0;
+      padding-right: 20px;
+      h3:after {
+        left: 0;
+      }
+    }    
+  }
+  &:hover {
+    .card__img {      
+      filter: grayscale(0);
+    } 
+  }
+}
 
 @media(max-width: 500px) {
   .header {
