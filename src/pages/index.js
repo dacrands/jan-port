@@ -47,9 +47,9 @@ export default ({ data }) => (
             />
           </div>
           <div className="card__content">
-            <h3>Bergen STEM</h3>
+            <h3>Bergen STEM</h3>            
             <small>
-              <em>React (GatsbyJS), Sass, Netlify CMS</em>
+              React (GatsbyJS), Sass, Netlify CMS
             </small>
             <p>
               Website designed and built for the STEM program at Bergen
@@ -72,15 +72,13 @@ export default ({ data }) => (
             />
           </div>
           <div className="card__content">
-            <h3>Just Files</h3>
-            <small>
+            <h3>Just Files</h3>            
+            <small>              
               <strong>Backend: </strong>
-              <em>
-                Amazon S3, Flask, MySQL, Docker, Nginx, DigitalOcean, SendGrid
-              </em>
-              <br />
+                Amazon S3, Flask, MySQL, Docker, Nginx, DigitalOcean, SendGrid              
+              <br />              
               <strong>Frontend: </strong>
-              <em>React (GatsbyJS), Sass, Fetch API, Netlify</em>
+              React (GatsbyJS), Sass, Fetch API, Netlify
             </small>
             <p>
               A file-hosting application that emphasizes simplicity. Features a
@@ -107,11 +105,9 @@ export default ({ data }) => (
           </div>
           <div className="card__content">
             <h3>To View It</h3>
-            <small>
-              <em>
-                Flask, MySQL, JinJa2 Templates, Docker, Nginx, DigitalOcean,
-                SendGrid
-              </em>
+            <small>              
+              Flask, MySQL, JinJa2 Templates, Docker, Nginx, DigitalOcean,
+              SendGrid              
             </small>
             <p>
               A to-do list application that features a scrolling-stocker ticker,
@@ -134,12 +130,12 @@ export default ({ data }) => (
           </div>
           <div className="card__content">
             <h3>New York Times App</h3>
-            <small>
+            <small>              
               <strong>Frontend: </strong>
-              <em>React, Redux, Redux-Thunk, Sass</em>
-              <br />
+                React, Redux, Redux-Thunk, Sass
+              <br />              
               <strong>Backend: </strong>
-              <em>Flask, Docker, DigitalOcean, Nginx</em>
+                Flask, Docker, DigitalOcean, Nginx
             </small>
             <p>
               Website designed and built for the STEM program at Bergen
