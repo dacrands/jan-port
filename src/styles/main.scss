@@ -104,10 +104,10 @@ body {
     margin: 20px 0;      
     margin-right: 0;
     text-align: right;    
-    a {
-      display: inline-block;      
-      margin-right: 1.25rem;
-    }
+  }
+  &__content-link {        
+    display: inline-block;      
+    margin-right: 1.25rem;    
   }    
 }
 

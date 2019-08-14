@@ -19,10 +19,10 @@ export default () => (
         Strong JavaScript Kowledge. Responsive Web Design. Experienced with ReactJS. Semantic HTML. Modular CSS. Accessibility Conscious.
       </p>
       <p>
-        <a href="asdfasf">Github</a>
-        <a href="asdfasdf">Email</a>
-        <a href="asdfasdf">Resume</a>
-        <a href="asdfasdf">Blog</a>
+        <a className="header__content-link" href="asdfasf">Github</a>
+        <a className="header__content-link" href="asdfasdf">Email</a>
+        <a className="header__content-link" href="asdfasdf">Resume</a>
+        <a className="header__content-link" href="asdfasdf">Blog</a>
       </p>
     </div>
 
