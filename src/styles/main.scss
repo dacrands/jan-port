@@ -29,8 +29,8 @@ body {
     margin: 50px 0;
   }
   &--red {
-    color: $red;
-  }
+    color: $red;  
+  }  
 }  
 
 .card {
@@ -38,9 +38,6 @@ body {
   margin-bottom: 5rem;  
   div {
     flex: 50%;
-  }
-  &__img {    
-    filter: grayscale(1);
   }
   &__content {
     // border-top: 10px solid $red;        
@@ -94,9 +91,9 @@ body {
   grid-template-columns:  1fr 380px;
   &__title {    
     // outline: 1px dashed blueviolet;s
-    position: relative;    
-    border-right: 50px solid $red;    
-    writing-mode: vertical-rl;
+    position: relative;        
+    border-right: 12px solid $red;    
+    writing-mode: vertical-rl;    
     transform: rotate(180deg);
   }  
   &__content {
