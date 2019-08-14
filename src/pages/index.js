@@ -35,7 +35,10 @@ export default () => (
           <img className="fluid" src="https://friendly-shannon-aaf0b6.netlify.com/img/bstem3.jpg" alt=""/>
         </div>
         <div className="card__content">
-          <h3>Bergen STEM</h3>
+          <h3>Bergen STEM</h3>   
+          <small><em>
+            React (GatsbyJS), Sass, Netlify CMS
+            </em></small>       
           <p>
           Website designed and built for the STEM program at Bergen Community College. Built with Gatsby and the Netlify-CMS, the site showcases student resources, scholarship information, and student projects.
           </p>
@@ -52,6 +55,19 @@ export default () => (
         </div>
         <div className="card__content">
           <h3>Just Files</h3>
+          <small><strong>Backend: </strong><em>
+                Amazon S3,                
+                Flask,
+                MySQL,
+                Docker,
+                Nginx,
+                DigitalOcean,
+                SendGrid</em>
+                <br/>
+                <strong>Frontend: </strong><em>
+                React (GatsbyJS),                                
+                Sass,
+                Fetch API, Netlify</em></small>
           <p>
           A file-hosting application that emphasizes simplicity. Features a GatsbyJS front-end and a Flask back-end. The Flask API provides users the ability to upload, download, and delete files from an S3 bucket, as well provide user authentication. The client app is responsive, accessible, and utilizes the Fetch API for ajax.
           </p>
@@ -70,6 +86,11 @@ export default () => (
         </div>
         <div className="card__content">
           <h3>To View It</h3>
+          <small>
+            <em>
+            Flask, MySQL, JinJa2 Templates, Docker, Nginx, DigitalOcean, SendGrid
+            </em>
+          </small>
           <p>
           A to-do list application that features a scrolling-stocker ticker, weather information, and a custom background Youtube video. Features SendGrid email authentication and the YouTube IFrame API.
           </p>
@@ -86,6 +107,23 @@ export default () => (
         </div>
         <div className="card__content">
           <h3>New York Times App</h3>
+          <small>
+            <strong>Frontend: </strong>
+            <em>
+            React,
+            Redux,
+            Redux-Thunk,
+            Sass
+            </em>
+            <br/>          
+            <strong>Backend: </strong>
+            <em>            
+            Flask,
+            Docker,
+            DigitalOcean,
+            Nginx           
+            </em>
+          </small>
           <p>
           Website designed and built for the STEM program at Bergen Community College. Built with Gatsby and the Netlify-CMS, the site showcases student resources, scholarship information, and student projects.
           </p>
