@@ -22,6 +22,7 @@ export default () => (
         <a href="asdfasf">Github</a>
         <a href="asdfasdf">Email</a>
         <a href="asdfasdf">Resume</a>
+        <a href="asdfasdf">Blog</a>
       </p>
     </div>
 
@@ -55,9 +56,11 @@ export default () => (
           A file-hosting application that emphasizes simplicity. Features a GatsbyJS front-end and a Flask back-end. The Flask API provides users the ability to upload, download, and delete files from an S3 bucket, as well provide user authentication. The client app is responsive, accessible, and utilizes the Fetch API for ajax.
           </p>
           <p>
-            <a href="">Site</a>            
+            <a href="">Just Files</a>            
             <br/>
-            <a href="">Code</a>
+            <a href="">Backend Repo</a>
+            <br/>
+            <a href="">Frontend Repo</a>
           </p>
         </div>
       </article>
@@ -71,9 +74,9 @@ export default () => (
           A to-do list application that features a scrolling-stocker ticker, weather information, and a custom background Youtube video. Features SendGrid email authentication and the YouTube IFrame API.
           </p>
           <p>
-            <a href="">Site</a>            
+            <a href="">To View It</a>            
             <br/>
-            <a href="">Code</a>
+            <a href="">GitHub Repo</a>
           </p>
         </div>
       </article>
@@ -82,14 +85,14 @@ export default () => (
           <img className="fluid" src="https://friendly-shannon-aaf0b6.netlify.com/img/to-view-it-2.jpg" alt=""/>
         </div>
         <div className="card__content">
-          <h3>Some Project</h3>
+          <h3>New York Times App</h3>
           <p>
           Website designed and built for the STEM program at Bergen Community College. Built with Gatsby and the Netlify-CMS, the site showcases student resources, scholarship information, and student projects.
           </p>
           <p>
-            <a href="">Site</a>            
+            <a href="">New York Times App</a>            
             <br/>
-            <a href="">Code</a>
+            <a href="">GitHub Repo</a>
           </p>
         </div>
       </article>
