@@ -1,8 +1,10 @@
 import React from "react"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 
 import "../styles/main.scss"
 
-export default () => (
+export default ({ data }) => (
   <main className="container">
   <header class="header">
     <div className="header__title">
@@ -32,7 +34,10 @@ export default () => (
     <div>
       <article className="card">
         <div className="card__img">
-          <img className="fluid" src="https://friendly-shannon-aaf0b6.netlify.com/img/bstem3.jpg" alt=""/>
+        <Img
+          fluid={data.bergen.childImageSharp.fluid}
+          alt="Gatsby Docs are awesome"
+        />          
         </div>
         <div className="card__content">
           <h3>Bergen STEM</h3>   
@@ -51,7 +56,10 @@ export default () => (
       </article>
       <article className="card">
         <div className="card__img">
-          <img className="fluid" src="https://friendly-shannon-aaf0b6.netlify.com/img/justfiles.jpg" alt=""/>
+        <Img
+          fluid={data.justFiles.childImageSharp.fluid}
+          alt="Gatsby Docs are awesome"
+        />  
         </div>
         <div className="card__content">
           <h3>Just Files</h3>
@@ -82,7 +90,10 @@ export default () => (
       </article>
       <article className="card">
         <div className="card__img">
-          <img className="fluid" src="https://friendly-shannon-aaf0b6.netlify.com/img/to-view-it-2.jpg" alt=""/>
+        <Img
+          fluid={data.toViewIt.childImageSharp.fluid}
+          alt="Gatsby Docs are awesome"
+        />  
         </div>
         <div className="card__content">
           <h3>To View It</h3>
@@ -103,7 +114,10 @@ export default () => (
       </article>
       <article className="card">
         <div className="card__img">
-          <img className="fluid" src="https://friendly-shannon-aaf0b6.netlify.com/img/to-view-it-2.jpg" alt=""/>
+        <Img
+          fluid={data.nytApp.childImageSharp.fluid}
+          alt="Gatsby Docs are awesome"
+        />  
         </div>
         <div className="card__content">
           <h3>New York Times App</h3>
@@ -138,3 +152,40 @@ export default () => (
   </section>
 </main>
 )
+
+export const query = graphql`
+  query {
+    bergen: file(relativePath: {eq: "stem-landing.JPG"}) {
+      childImageSharp {
+        id
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    toViewIt: file(relativePath: {eq: "to-view-it-2.JPG"}) {
+      childImageSharp {
+        id
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    justFiles: file(relativePath: {eq: "justfiles.jpg"}) {
+      childImageSharp {
+        id
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    nytApp: file(relativePath: {eq: "nytapp.JPG"}) {
+      childImageSharp {
+        id
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
