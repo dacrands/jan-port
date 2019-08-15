@@ -21,15 +21,17 @@ export default ({ data }) => (
           ReactJS. Semantic HTML. Modular CSS. Accessibility Conscious.
         </p>
         <p>
-          <a className="header__content-link" href="asdfasf">
+          <a className="header__content-link" href="https://github.com/dacrands" target="_blank" rel="noopener noreferrer">
             Github
-          </a>
-          <a className="header__content-link" href="asdfasdf">
+          </a>    
+          <a className="header__content-link" href="mailto:davecrands@gmail.com">
             Email
+          </a>      
+          <a  href="asdfasdf">
           </a>
-          <a className="header__content-link" href="asdfasdf">
+          <a className="header__content-link" href="https://dacrands.github.io/" target="_blank" rel="noopener noreferrer">            
             Blog
-          </a>
+          </a>          
         </p>
       </div>
     </header>
