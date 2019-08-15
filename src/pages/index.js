@@ -103,7 +103,7 @@ export default ({ data }) => (
             <small>
               <strong>Backend: </strong>
               Amazon S3, Flask, MySQL, Docker, Nginx, DigitalOcean, SendGrid
-              {` `}
+              <br/>
               <strong>Frontend: </strong>
               React (GatsbyJS), Sass, Fetch API, Netlify
             </small>
@@ -188,7 +188,7 @@ export default ({ data }) => (
             <small>
               <strong>Frontend: </strong>
               React, Redux, Redux-Thunk, Sass
-              {` `}
+              <br/>
               <strong>Backend: </strong>
               Flask, Docker, DigitalOcean, Nginx
             </small>
