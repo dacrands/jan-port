@@ -125,6 +125,9 @@ body {
 @media(max-width: 500px) {
   .header {
     grid-template-columns: 110px 1fr;
+    &__content {
+      font-size: 16px;  
+    }
     &__content-link {      
       display: block;                 
       margin-bottom: 1rem;      
@@ -161,8 +164,7 @@ body {
     &__content {  
       padding: 0 10px;    
       margin: 0 auto;        
-      margin-top: 50px;    
-      font-size: 16px;    
+      margin-top: 50px;            
     }
   }
 }
