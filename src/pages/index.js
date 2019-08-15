@@ -45,15 +45,15 @@ export default ({ data }) => (
           </div>
           <div className="card__content">
             <h3>Bergen STEM</h3>            
-            <small>
-              React (GatsbyJS), Sass, Netlify CMS
-            </small>
             <p>
               Website designed and built for the STEM program at Bergen
               Community College. Built with Gatsby and the Netlify-CMS, the site
               showcases student resources, scholarship information, and student
               projects.
             </p>
+            <small>
+              React (GatsbyJS), Sass, Netlify CMS
+            </small>
             <p>
               <a href="">Bergen STEM</a>
               <br />
@@ -70,13 +70,6 @@ export default ({ data }) => (
           </div>
           <div className="card__content">
             <h3>Just Files</h3>            
-            <small>              
-              <strong>Backend: </strong>
-                Amazon S3, Flask, MySQL, Docker, Nginx, DigitalOcean, SendGrid              
-              <br />              
-              <strong>Frontend: </strong>
-              React (GatsbyJS), Sass, Fetch API, Netlify
-            </small>
             <p>
               A file-hosting application that emphasizes simplicity. Features a
               GatsbyJS front-end and a Flask back-end. The Flask API provides
@@ -84,6 +77,13 @@ export default ({ data }) => (
               bucket, as well provide user authentication. The client app is
               responsive, accessible, and utilizes the Fetch API for ajax.
             </p>
+            <small>              
+              <strong>Backend: </strong>
+                Amazon S3, Flask, MySQL, Docker, Nginx, DigitalOcean, SendGrid              
+              <br />              
+              <strong>Frontend: </strong>
+              React (GatsbyJS), Sass, Fetch API, Netlify
+            </small>
             <p>
               <a href="">Just Files</a>
               <br />
@@ -102,15 +102,15 @@ export default ({ data }) => (
           </div>
           <div className="card__content">
             <h3>To View It</h3>
-            <small>              
-              Flask, MySQL, JinJa2 Templates, Docker, Nginx, DigitalOcean,
-              SendGrid              
-            </small>
             <p>
               A to-do list application that features a scrolling-stocker ticker,
               weather information, and a custom background Youtube video.
               Features SendGrid email authentication and the YouTube IFrame API.
             </p>
+            <small>              
+              Flask, MySQL, JinJa2 Templates, Docker, Nginx, DigitalOcean,
+              SendGrid              
+            </small>
             <p>
               <a href="">To View It</a>
               <br />
@@ -127,6 +127,12 @@ export default ({ data }) => (
           </div>
           <div className="card__content">
             <h3>New York Times App</h3>
+            <p>
+              Website designed and built for the STEM program at Bergen
+              Community College. Built with Gatsby and the Netlify-CMS, the site
+              showcases student resources, scholarship information, and student
+              projects.
+            </p>
             <small>              
               <strong>Frontend: </strong>
                 React, Redux, Redux-Thunk, Sass
@@ -134,12 +140,6 @@ export default ({ data }) => (
               <strong>Backend: </strong>
                 Flask, Docker, DigitalOcean, Nginx
             </small>
-            <p>
-              Website designed and built for the STEM program at Bergen
-              Community College. Built with Gatsby and the Netlify-CMS, the site
-              showcases student resources, scholarship information, and student
-              projects.
-            </p>
             <p>
               <a href="">New York Times App</a>
               <br />
