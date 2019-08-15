@@ -10,7 +10,6 @@ export default ({ data }) => (
       <div className="header__title">
         <h1 className="text__title">David Crandall</h1>
       </div>
-
       <div className="header__content">
         <p class="text--red">
           REST. MVC. CRUD. Web APIs. HTTP. Authentication. Relational Databases.
@@ -21,17 +20,29 @@ export default ({ data }) => (
           ReactJS. Semantic HTML. Modular CSS. Accessibility Conscious.
         </p>
         <p>
-          <a className="header__content-link" href="https://github.com/dacrands" target="_blank" rel="noopener noreferrer">
+          <a
+            className="header__content-link"
+            href="https://github.com/dacrands"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Github
-          </a>    
-          <a className="header__content-link" href="mailto:davecrands@gmail.com">
-            Email
-          </a>      
-          <a  href="asdfasdf">
           </a>
-          <a className="header__content-link" href="https://dacrands.github.io/" target="_blank" rel="noopener noreferrer">            
+          <a
+            className="header__content-link"
+            href="mailto:davecrands@gmail.com"
+          >
+            Email
+          </a>
+          <a href="asdfasdf"></a>
+          <a
+            className="header__content-link"
+            href="https://dacrands.github.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Blog
-          </a>          
+          </a>
         </p>
       </div>
     </header>
@@ -46,20 +57,30 @@ export default ({ data }) => (
             />
           </div>
           <div className="card__content">
-            <h3>Bergen STEM</h3>            
+            <h3>Bergen STEM</h3>
             <p>
               Website designed and built for the STEM program at Bergen
               Community College. Built with Gatsby and the Netlify-CMS, the site
               showcases student resources, scholarship information, and student
               projects.
             </p>
-            <small>
-              React (GatsbyJS), Sass, Netlify CMS
-            </small>
+            <small>React (GatsbyJS), Sass, Netlify CMS</small>
             <p>
-              <a href="https://bergenstem.com" target="_blank" rel="noopener noreferrer">Bergen STEM</a>              
+              <a
+                href="https://bergenstem.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Bergen STEM
+              </a>
               <br />
-              <a href="https://github.com/dacrands/bergen-gatsby-cms" target="_blank" rel="noopener noreferrer">GitHub Repo</a>              
+              <a
+                href="https://github.com/dacrands/bergen-gatsby-cms"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub Repo
+              </a>
             </p>
           </div>
         </article>
@@ -71,7 +92,7 @@ export default ({ data }) => (
             />
           </div>
           <div className="card__content">
-            <h3>Just Files</h3>            
+            <h3>Just Files</h3>
             <p>
               A file-hosting application that emphasizes simplicity. Features a
               GatsbyJS front-end and a Flask back-end. The Flask API provides
@@ -79,19 +100,37 @@ export default ({ data }) => (
               bucket, as well provide user authentication. The client app is
               responsive, accessible, and utilizes the Fetch API for ajax.
             </p>
-            <small>              
+            <small>
               <strong>Backend: </strong>
-                Amazon S3, Flask, MySQL, Docker, Nginx, DigitalOcean, SendGrid              
-              <br />              
+              Amazon S3, Flask, MySQL, Docker, Nginx, DigitalOcean, SendGrid
+              <br />
               <strong>Frontend: </strong>
               React (GatsbyJS), Sass, Fetch API, Netlify
             </small>
             <p>
-              <a href="https://files.crandall.dev" target="_blank" rel="noopener noreferrer">Just Files</a>                            
+              <a
+                href="https://files.crandall.dev"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Just Files
+              </a>
               <br />
-              <a href="https://github.com/dacrands/s3-upload-backend" target="_blank" rel="noopener noreferrer">Backend Repo</a>                            
+              <a
+                href="https://github.com/dacrands/s3-upload-backend"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Backend Repo
+              </a>
               <br />
-              <a href="https://github.com/dacrands/s3-upload-frontend" target="_blank" rel="noopener noreferrer">Frontend Repo</a>                            
+              <a
+                href="https://github.com/dacrands/s3-upload-frontend"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Frontend Repo
+              </a>
             </p>
           </div>
         </article>
@@ -109,15 +148,26 @@ export default ({ data }) => (
               weather information, and a custom background Youtube video.
               Features SendGrid email authentication and the YouTube IFrame API.
             </p>
-            <small>              
+            <small>
               Flask, MySQL, JinJa2 Templates, Docker, Nginx, DigitalOcean,
-              SendGrid              
+              SendGrid
             </small>
             <p>
-              <a href="https://toviewit.xyz" target="_blank" rel="noopener noreferrer">To View It</a>                            
+              <a
+                href="https://toviewit.xyz"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                To View It
+              </a>
               <br />
-              <a href="https://github.com/dacrands/flask-smart-monitor" target="_blank" rel="noopener noreferrer">GitHub Repo</a>              
-              
+              <a
+                href="https://github.com/dacrands/flask-smart-monitor"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub Repo
+              </a>
             </p>
           </div>
         </article>
@@ -131,21 +181,41 @@ export default ({ data }) => (
           <div className="card__content">
             <h3>New York Times App</h3>
             <p>
-            Single-page application featuring NYT data. React/Redux front-end, Flask back-end. Features an archive search where users can read articles dating back to the year 1900.
+              Single-page application featuring NYT data. React/Redux front-end,
+              Flask back-end. Features an archive search where users can read
+              articles dating back to the year 1900.
             </p>
-            <small>              
+            <small>
               <strong>Frontend: </strong>
-                React, Redux, Redux-Thunk, Sass
-              <br />              
+              React, Redux, Redux-Thunk, Sass
+              <br />
               <strong>Backend: </strong>
-                Flask, Docker, DigitalOcean, Nginx
+              Flask, Docker, DigitalOcean, Nginx
             </small>
             <p>
-              <a href="https://times.dcrands.com" target="_blank" rel="noopener noreferrer">New York Times App</a>                            
+              <a
+                href="https://times.dcrands.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                New York Times App
+              </a>
               <br />
-              <a href="https://github.com/dacrands/new-york-times-backend" target="_blank" rel="noopener noreferrer">Backend Repo</a>                            
+              <a
+                href="https://github.com/dacrands/new-york-times-backend"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Backend Repo
+              </a>
               <br />
-              <a href="https://github.com/dacrands/nyt-app-cors" target="_blank" rel="noopener noreferrer">Frontend Repo</a>                                                      
+              <a
+                href="https://github.com/dacrands/nyt-app-cors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Frontend Repo
+              </a>
             </p>
           </div>
         </article>
