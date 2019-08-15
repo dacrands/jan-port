@@ -28,9 +28,6 @@ export default ({ data }) => (
             Email
           </a>
           <a className="header__content-link" href="asdfasdf">
-            Resume
-          </a>
-          <a className="header__content-link" href="asdfasdf">
             Blog
           </a>
         </p>
