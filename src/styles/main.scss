@@ -89,10 +89,12 @@ body {
     h3 {
       line-height: 200%;
       position: relative;
-      margin: 10px 0;
+      margin: 0;
+      margin-bottom: 1.75rem;
       text-transform: uppercase;
       letter-spacing: 1px;
       font-size: 14px;
+      
       &:after {
         content: "";
         background: $red;
@@ -127,10 +129,6 @@ body {
     grid-template-columns: 110px 1fr;
     &__content {
       font-size: 16px;  
-    }
-    &__content-link {      
-      display: block;                 
-      margin-bottom: 1rem;      
     }
   }
   .card {
