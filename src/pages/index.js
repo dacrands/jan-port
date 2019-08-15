@@ -42,7 +42,7 @@ export default ({ data }) => (
           <div className="card__img">
             <Img
               fluid={data.bergen.childImageSharp.fluid}
-              alt="Gatsby Docs are awesome"
+              alt="Bergen STEM landing page"
             />
           </div>
           <div className="card__content">
@@ -57,9 +57,9 @@ export default ({ data }) => (
               React (GatsbyJS), Sass, Netlify CMS
             </small>
             <p>
-              <a href="">Bergen STEM</a>
+              <a href="https://bergenstem.com" target="_blank" rel="noopener noreferrer">Bergen STEM</a>              
               <br />
-              <a href="">GitHub Repo</a>
+              <a href="https://github.com/dacrands/bergen-gatsby-cms" target="_blank" rel="noopener noreferrer">GitHub Repo</a>              
             </p>
           </div>
         </article>
@@ -67,7 +67,7 @@ export default ({ data }) => (
           <div className="card__img">
             <Img
               fluid={data.justFiles.childImageSharp.fluid}
-              alt="Gatsby Docs are awesome"
+              alt="File Hosting App Landing Page"
             />
           </div>
           <div className="card__content">
@@ -87,11 +87,11 @@ export default ({ data }) => (
               React (GatsbyJS), Sass, Fetch API, Netlify
             </small>
             <p>
-              <a href="">Just Files</a>
+              <a href="https://files.crandall.dev" target="_blank" rel="noopener noreferrer">Just Files</a>                            
               <br />
-              <a href="">Backend Repo</a>
+              <a href="https://github.com/dacrands/s3-upload-backend" target="_blank" rel="noopener noreferrer">Backend Repo</a>                            
               <br />
-              <a href="">Frontend Repo</a>
+              <a href="https://github.com/dacrands/s3-upload-frontend" target="_blank" rel="noopener noreferrer">Frontend Repo</a>                            
             </p>
           </div>
         </article>
@@ -114,9 +114,10 @@ export default ({ data }) => (
               SendGrid              
             </small>
             <p>
-              <a href="">To View It</a>
+              <a href="https://toviewit.xyz" target="_blank" rel="noopener noreferrer">To View It</a>                            
               <br />
-              <a href="">GitHub Repo</a>
+              <a href="https://github.com/dacrands/flask-smart-monitor" target="_blank" rel="noopener noreferrer">GitHub Repo</a>              
+              
             </p>
           </div>
         </article>
@@ -130,10 +131,7 @@ export default ({ data }) => (
           <div className="card__content">
             <h3>New York Times App</h3>
             <p>
-              Website designed and built for the STEM program at Bergen
-              Community College. Built with Gatsby and the Netlify-CMS, the site
-              showcases student resources, scholarship information, and student
-              projects.
+            Single-page application featuring NYT data. React/Redux front-end, Flask back-end. Features an archive search where users can read articles dating back to the year 1900.
             </p>
             <small>              
               <strong>Frontend: </strong>
@@ -143,9 +141,11 @@ export default ({ data }) => (
                 Flask, Docker, DigitalOcean, Nginx
             </small>
             <p>
-              <a href="">New York Times App</a>
+              <a href="https://times.dcrands.com" target="_blank" rel="noopener noreferrer">New York Times App</a>                            
               <br />
-              <a href="">GitHub Repo</a>
+              <a href="https://github.com/dacrands/new-york-times-backend" target="_blank" rel="noopener noreferrer">Backend Repo</a>                            
+              <br />
+              <a href="https://github.com/dacrands/nyt-app-cors" target="_blank" rel="noopener noreferrer">Frontend Repo</a>                                                      
             </p>
           </div>
         </article>
