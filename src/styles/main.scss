@@ -20,8 +20,6 @@ body {
   padding: 0 15px;
 }
 
-
-
 .text {
   &__title {
     margin: 0;
@@ -37,11 +35,48 @@ body {
   }  
 }  
 
+.btn {
+  position: relative;
+  display: inline-block;
+  margin-top: 0.35rem;  
+  font-size: 12px;
+  text-decoration: none;
+  padding: 5px 10px;
+  background: #c2b7b633;
+  letter-spacing: 1px;
+  color: $red;
+  transition: all 400ms ease;
+  &--big {
+    padding: 10px 20px;
+    letter-spacing: 2px;
+  }
+  &:before {
+    content: "";
+    position: absolute;        
+    z-index: -2; 
+    left: 0;
+    top: 0;
+    height: 100%;    
+    width: 0;
+    background: $red;
+    transition: all 200ms ease;
+  }
+  &:hover {
+    color: white;
+    &:before {    
+      width: 100%;
+    } 
+  }
+}
+
 .header {  
   // outline: 1px dashed blue;
   margin: 0 auto;    
   display: grid;
   grid-template-columns:  1fr 380px;
+  .btn {
+    margin-right: 1rem;
+  }
   &__title {    
     // outline: 1px dashed blueviolet;s
     position: relative;        
@@ -58,10 +93,6 @@ body {
     margin-right: 0;
     text-align: right;    
   }
-  &__content-link {        
-    display: inline-block;      
-    margin-right: 1.25rem;    
-  }    
 }
 
 .card {
@@ -78,10 +109,6 @@ body {
   &__content {
     padding-left: 20px;
     text-align: right;
-    a {
-      display: inline-block;
-      margin-right: 0.35rem;
-    }
     p {
       line-height: 145%;
       color: $black--light;
@@ -93,8 +120,7 @@ body {
       margin-bottom: 1.75rem;
       text-transform: uppercase;
       letter-spacing: 1px;
-      font-size: 14px;
-      
+      font-size: 14px;      
       &:after {
         content: "";
         background: $red;
