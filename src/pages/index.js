@@ -21,7 +21,7 @@ export default ({ data }) => (
         </p>
         <p>
           <a
-            className="header__content-link"
+            className="btn btn--big"
             href="https://github.com/dacrands"
             target="_blank"
             rel="noopener noreferrer"
@@ -29,14 +29,13 @@ export default ({ data }) => (
             Github
           </a>
           <a
-            className="header__content-link"
+            className="btn btn--big"
             href="mailto:davecrands@gmail.com"
           >
             Email
           </a>
-          <a href="asdfasdf"></a>
           <a
-            className="header__content-link"
+            className="btn btn--big"
             href="https://dacrands.github.io/"
             target="_blank"
             rel="noopener noreferrer"
@@ -70,6 +69,7 @@ export default ({ data }) => (
                 href="https://bergenstem.com"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="btn"
               >
                 Bergen STEM
               </a>
@@ -78,6 +78,7 @@ export default ({ data }) => (
                 href="https://github.com/dacrands/bergen-gatsby-cms"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="btn"
               >
                 GitHub Repo
               </a>
@@ -112,6 +113,7 @@ export default ({ data }) => (
                 href="https://files.crandall.dev"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="btn"
               >
                 Just Files
               </a>
@@ -120,6 +122,7 @@ export default ({ data }) => (
                 href="https://github.com/dacrands/s3-upload-backend"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="btn"
               >
                 Backend Repo
               </a>
@@ -128,6 +131,7 @@ export default ({ data }) => (
                 href="https://github.com/dacrands/s3-upload-frontend"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="btn"
               >
                 Frontend Repo
               </a>
@@ -157,6 +161,7 @@ export default ({ data }) => (
                 href="https://toviewit.xyz"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="btn"
               >
                 To View It
               </a>
@@ -165,6 +170,7 @@ export default ({ data }) => (
                 href="https://github.com/dacrands/flask-smart-monitor"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="btn"
               >
                 GitHub Repo
               </a>
@@ -197,6 +203,7 @@ export default ({ data }) => (
                 href="https://times.dcrands.com"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="btn"
               >
                 New York Times App
               </a>
@@ -205,6 +212,7 @@ export default ({ data }) => (
                 href="https://github.com/dacrands/new-york-times-backend"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="btn"
               >
                 Backend Repo
               </a>
@@ -213,6 +221,7 @@ export default ({ data }) => (
                 href="https://github.com/dacrands/nyt-app-cors"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="btn"
               >
                 Frontend Repo
               </a>
