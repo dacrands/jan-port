@@ -151,8 +151,17 @@ body {
 }
 
 @media(max-width: 500px) {
+  .btn {
+    padding: 3px 6px;
+  }
+  .btn--big {    
+    padding: 7px 14px;
+  }
   .header {
-    grid-template-columns: 110px 1fr;
+    grid-template-columns: 100px 1fr;
+    .btn {
+      margin-left: 0.5rem;
+    }
     &__content {
       font-size: 16px;  
     }
