@@ -16,8 +16,16 @@ export default ({ data }) => (
           Containerization.
         </p>
         <p>
-          Strong JavaScript Kowledge. Responsive Web Design. Experienced with
-          ReactJS. Semantic HTML. Modular CSS. Accessibility Conscious.
+          Strong JavaScript Kowledge. 
+          <br/>
+          Responsive Web Design. 
+          <br/>
+          Experienced with
+          ReactJS. 
+          <br/>
+          Semantic HTML. 
+          <br/>
+          Modular CSS.
         </p>
         <p>
           <a
