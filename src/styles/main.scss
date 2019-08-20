@@ -109,6 +109,10 @@ body {
     font-style: normal;
     font-family: 'Courier New', Courier, monospace;
   }
+  .btn {
+    margin-top: 0.5rem;
+    margin-left: .35rem;
+  }
   &__content {
     padding-left: 20px;
     text-align: right;
@@ -137,6 +141,10 @@ body {
   }
   &:nth-of-type(even) {
     flex-direction: row-reverse;        
+    .btn {
+      margin-left: 0;
+      margin-right: 0.35rem;
+    }
     .card__content {
       text-align: left;      
       padding-left: 0;
@@ -171,6 +179,10 @@ body {
   }
   .card {
     display: block;
+    .btn {
+      margin-left: 0;
+      margin-right: 0.35rem;
+    }
     &__img {
       margin-bottom: 1.75rem;
     }
