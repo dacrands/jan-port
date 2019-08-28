@@ -1,5 +1,6 @@
 $red: #d44136;
 $red--dark: #bb3127;
+$red--bg: #d6aca833;
 $black: #1f1912;
 $black--light: rgba(0,0,0,0.7);
 
@@ -41,7 +42,7 @@ body {
   font-size: 12px;
   text-decoration: none;
   padding: 5px 10px;
-  background: #d6aca833;
+  background: $red--bg;
   letter-spacing: 1px;
   color: $red--dark;
   transition: all 400ms ease;
