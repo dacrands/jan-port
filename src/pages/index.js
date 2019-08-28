@@ -66,7 +66,7 @@ export default ({ data }) => (
           <div className="card__content">
             <h3>Bergen STEM</h3>
             <p>
-              Website designed and built for the STEM program at Bergen
+              Progressive web app designed and built for the STEM program at Bergen
               Community College. Built with Gatsby and the Netlify-CMS, the site
               showcases student resources, scholarship information, and student
               projects.
@@ -103,15 +103,20 @@ export default ({ data }) => (
           <div className="card__content">
             <h3>Just Files</h3>
             <p>
-              A file-hosting application that emphasizes simplicity. Features a
+              File-hosting web app offering file search and
+              file descriptions. Developed a web API that provides user-authentcation and CRUD
+              functionality for files hosted on an S3 bucket.
+              Designed and built a responsive and accessible client-app using GatsbyJS (React).
+
+              {/* A file-hosting application that emphasizes simplicity. Features a
               GatsbyJS front-end and a Flask back-end. The Flask API provides
               users the ability to upload, download, and delete files from an S3
               bucket, as well provide user authentication. The client app is
-              responsive, accessible, and utilizes the Fetch API for ajax.
+              responsive, accessible, and utilizes the Fetch API for ajax. */}
             </p>
             <small>
               <strong>Backend: </strong>
-              Amazon S3, Flask, MySQL, Docker, Nginx, DigitalOcean, SendGrid
+              Amazon S3, Flask, MySQL, Docker, JSON Web Tokens, Nginx, DigitalOcean
               <br/>
               <strong>Frontend: </strong>
               React (GatsbyJS), Sass, Fetch API, Netlify
@@ -156,12 +161,12 @@ export default ({ data }) => (
           <div className="card__content">
             <h3>To View It</h3>
             <p>
-              A to-do list application that features a scrolling-stocker ticker,
-              weather information, and a custom background Youtube video.
-              Features SendGrid email authentication and the YouTube IFrame API.
+              MVC to-do list application that features a scrolling-stocker ticker,
+              weather information, and a custom background Youtube video.            
+              Uses JSON Web Tokens for email verifications and password resets.  
             </p>
             <small>
-              Flask, MySQL, JinJa2 Templates, Docker, Nginx, DigitalOcean,
+              Flask, MySQL, JinJa2 Templates, Docker, JSON Web Tokens, Nginx, DigitalOcean,
               SendGrid
             </small>
             <p>
@@ -195,9 +200,10 @@ export default ({ data }) => (
           <div className="card__content">
             <h3>New York Times App</h3>
             <p>
-              Single-page application featuring NYT data. React/Redux front-end,
-              Flask back-end. Features an archive search where users can read
-              articles dating back to the year 1900.
+              Web app that features an archive search where users can read
+              news articles dating back to the year 1900. Designed and built a responsive react/redux 
+              application to asynchronously retrieve API data. Developed a 
+              web API that uses CORS to proxy requests between the client app and the NYT API.              
             </p>
             <small>
               <strong>Frontend: </strong>
