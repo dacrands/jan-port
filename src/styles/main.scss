@@ -4,6 +4,8 @@ $red--bg: #d6aca833;
 $black: #1f1912;
 $black--light: rgba(0,0,0,0.7);
 
+$card-padding: 30px;
+
 body {
   margin: 0;  
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -115,7 +117,7 @@ body {
     margin-left: .35rem;
   }
   &__content {
-    padding-left: 20px;
+    padding-left: $card-padding;
     text-align: right;
     p {
       line-height: 145%;
@@ -149,7 +151,7 @@ body {
     .card__content {
       text-align: left;      
       padding-left: 0;
-      padding-right: 20px;
+      padding-right: $card-padding;
       h3:after {
         left: 0;
       }
