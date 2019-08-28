@@ -54,7 +54,7 @@ export default ({ data }) => (
       </div>
     </header>
     <section class="section">
-      <h2 class="text__title text--red text--space">Projects</h2>
+      <h2 class="text__title text--red text--space">Portfolio</h2>
       <div>
         <article className="card">
           <div className="card__img">
