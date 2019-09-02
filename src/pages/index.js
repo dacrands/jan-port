@@ -4,27 +4,28 @@ import Img from "gatsby-image"
 
 import "../styles/main.scss"
 
+import Contact from "../components/Contact"
+
 export default ({ data }) => (
   <main className="container">
-    <header class="header">
+    <header className="header">
       <div className="header__title">
         <h1 className="text__title">David Crandall</h1>
       </div>
       <div className="header__content">
-        <p class="text--red">
+        <p className="text--red">
           REST. MVC. CRUD. Web APIs. HTTP. Authentication. Relational Databases.
           Containerization.
         </p>
         <p>
-          Strong JavaScript Kowledge. 
-          <br/>
-          Responsive Web Design. 
-          <br/>
-          Experienced with
-          ReactJS. 
-          <br/>
-          Semantic HTML. 
-          <br/>
+          Strong JavaScript Kowledge.
+          <br />
+          Responsive Web Design.
+          <br />
+          Experienced with ReactJS.
+          <br />
+          Semantic HTML.
+          <br />
           Modular CSS.
         </p>
         <p>
@@ -36,10 +37,7 @@ export default ({ data }) => (
           >
             Github
           </a>
-          <a
-            className="btn btn--big"
-            href="mailto:davecrands@gmail.com"
-          >
+          <a className="btn btn--big" href="mailto:davecrands@gmail.com">
             Email
           </a>
           <a
@@ -53,8 +51,8 @@ export default ({ data }) => (
         </p>
       </div>
     </header>
-    <section class="section">
-      <h2 class="text__title text--red text--space">Portfolio</h2>
+    <section className="section">
+      <h2 className="text__title text--red text--space">Portfolio</h2>
       <div>
         <article className="card">
           <div className="card__img">
@@ -66,10 +64,10 @@ export default ({ data }) => (
           <div className="card__content">
             <h3>Bergen STEM</h3>
             <p>
-              Progressive web app designed and built for the STEM program at Bergen
-              Community College. Built with Gatsby and the Netlify-CMS, the site
-              showcases student resources, scholarship information, and student
-              projects.
+              Progressive web app designed and developed for the STEM program at
+              Bergen Community College. Built with Gatsby and the Netlify-CMS,
+              the site showcases student resources, scholarship information, and
+              student projects.
             </p>
             <small>React (GatsbyJS), Sass, Netlify CMS</small>
             <p>
@@ -103,11 +101,10 @@ export default ({ data }) => (
           <div className="card__content">
             <h3>Just Files</h3>
             <p>
-              File-hosting web app offering file search and
-              file descriptions. Developed a web API that provides user-authentcation and CRUD
-              functionality for files hosted on an S3 bucket.
-              Designed and built a responsive and accessible client-app using GatsbyJS (React).
-
+              File-hosting web app offering file search and file descriptions.
+              Developed a web API that provides user-authentcation and CRUD
+              functionality for files hosted on an S3 bucket. Designed and built
+              a responsive and accessible client-app using GatsbyJS (React).
               {/* A file-hosting application that emphasizes simplicity. Features a
               GatsbyJS front-end and a Flask back-end. The Flask API provides
               users the ability to upload, download, and delete files from an S3
@@ -116,8 +113,9 @@ export default ({ data }) => (
             </p>
             <small>
               <strong>Backend: </strong>
-              Amazon S3, Flask, MySQL, Docker, JSON Web Tokens, Nginx, DigitalOcean
-              <br/>
+              Amazon S3, Flask, MySQL, Docker, JSON Web Tokens, Nginx,
+              DigitalOcean
+              <br />
               <strong>Frontend: </strong>
               React (GatsbyJS), Sass, Fetch API, Netlify
             </small>
@@ -161,13 +159,14 @@ export default ({ data }) => (
           <div className="card__content">
             <h3>To View It</h3>
             <p>
-              MVC to-do list application that features a scrolling-stocker ticker,
-              weather information, and a custom background Youtube video.            
-              Uses JSON Web Tokens for email verifications and password resets.  
+              MVC to-do list application that features a scrolling-stocker
+              ticker, weather information, and a custom background Youtube
+              video. Uses JSON Web Tokens for email verifications and password
+              resets.
             </p>
             <small>
-              Flask, MySQL, JinJa2 Templates, Docker, JSON Web Tokens, Nginx, DigitalOcean,
-              SendGrid
+              Flask, MySQL, JinJa2 Templates, Docker, JSON Web Tokens, Nginx,
+              DigitalOcean, SendGrid
             </small>
             <p>
               <a
@@ -200,15 +199,16 @@ export default ({ data }) => (
           <div className="card__content">
             <h3>New York Times App</h3>
             <p>
-              Web app that features an archive search where users can read
-              news articles dating back to the year 1900. Designed and built a responsive react/redux 
-              application to asynchronously retrieve API data. Developed a 
-              web API that uses CORS to proxy requests between the client app and the NYT API.              
+              Web app that features an archive search where users can read news
+              articles dating back to the year 1900. Designed and built a
+              responsive react/redux application to asynchronously retrieve API
+              data. Developed a web API that uses CORS to proxy requests between
+              the client app and the NYT API.
             </p>
             <small>
               <strong>Frontend: </strong>
               React, Redux, Redux-Thunk, Sass
-              <br/>
+              <br />
               <strong>Backend: </strong>
               Flask, Docker, DigitalOcean, Nginx
             </small>
@@ -244,6 +244,7 @@ export default ({ data }) => (
         </article>
       </div>
     </section>
+    <Contact />
   </main>
 )
 
