@@ -22,8 +22,14 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  // align-items: flex-start;
+  align-content: center;  
 }
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
 .flex__item {
   flex-grow: 1;
 }
@@ -263,6 +269,28 @@ small {
 }
 
 
+.success {
+  // outline: 1px solid red;
+  background: $light;
+  text-align: center;
+  height: 50vh;
+  margin-top: 50px;
+  padding: 50px;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@keyframes success {
+  0% {
+    transform: rotate3d(1, 4, 1, 90deg);
+  }
+  100% {
+    transform: rotate3d(0);
+  }
+}
+
 @media(max-width: 360px) {
   .header {
     display: block;
@@ -283,5 +311,4 @@ small {
       margin-top: 50px;            
     }
   }
-
 }
