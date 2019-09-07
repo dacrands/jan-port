@@ -13,21 +13,9 @@ export default ({ data }) => (
         <h1 className="text__title">David Crandall</h1>
       </div>
       <div className="header__content">
-        <p className="text--red">
-          REST. MVC. CRUD. Web APIs. HTTP. Authentication. Relational Databases.
-          Containerization.
-        </p>
-        <p>
-          Strong JavaScript Kowledge.
-          <br />
-          Responsive Web Design.
-          <br />
-          Experienced with ReactJS.
-          <br />
-          Semantic HTML.
-          <br />
-          Modular CSS.
-        </p>
+        <p className="text--red">          
+          I am a full-stack web developer with a passion for data-science.          
+        </p>      
         <p>
           <a
             className="btn btn--big"
@@ -37,8 +25,8 @@ export default ({ data }) => (
           >
             Github
           </a>
-          <a className="btn btn--big" href="mailto:davecrands@gmail.com">
-            Email
+          <a className="btn btn--big" href="#contact">
+            Contact
           </a>
           <a
             className="btn btn--big"
