@@ -272,8 +272,21 @@ small {
       margin-left: 0;
       margin-right: 0.35rem;
     }
-    &__img {
-      margin-bottom: 1.75rem;
+    &__img {            
+      margin-bottom: 1.75rem;      
+      &-gif {
+        display: none;        
+      }
+      &:hover {
+        .gatsby-image-wrapper {          
+          display: block;
+          opacity: 0;
+        }
+        .card__img-gif {
+          display: block;    
+          z-index: 1;                  
+        }
+      }
     }
     &__content {
       text-align: left;
