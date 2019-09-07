@@ -25,7 +25,7 @@ body {
   // align-items: flex-start;
 }
 .flex__item {
-  flex-grow: 1;
+  flex-grow: 1;  
 }
 
 small {
@@ -63,18 +63,22 @@ small {
   flex-direction: column;
 }
 .form__item {  
-  // outline: 1px solid green;        
-  label {
-    display: block;    
+  // outline: 1px solid green;     
+  label {        
+    display: block;        
+    margin-bottom: .5rem;
+    color: $black--light;
   }
   input,
   textarea {
+    font-size: 18px;  
     box-sizing: border-box;     
     width: 100%;
     display: block;
     padding: 10px;
     border: none;
     background: $light;
+    // border-bottom: 1px solid $red--bg;
   }
   .btn {    
     position: relative;
@@ -84,15 +88,10 @@ small {
     border: none;
     margin-top: 1rem;
     padding: 14px;
-    height: 100%;
-    width: 100%;
     font-size: 18px;
-    span {      
-      position: absolute;
-      top: 3px;
-      left: 3px;
-      font-size: initial;      
-    }
+    height: 100%;
+    width: 100%;    
+    grid-area: 1 / span 2;    
   }
 }
 
