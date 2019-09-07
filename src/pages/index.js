@@ -1,8 +1,12 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 
 import "../styles/main.scss"
+
+import FilesGif from "../images/gifs/justFiles.gif"
+import BergenGif from "../images/gifs/bergenstem.gif"
+import ToViewGif from "../images/gifs/toviewit.gif"
 
 import Contact from "../components/Contact"
 
@@ -43,11 +47,12 @@ export default ({ data }) => (
       <h2 className="text__title text--red text--space">Portfolio</h2>
       <div>
         <article className="card">
-          <div className="card__img">
+          <div className="card__img card__img--has-gif">            
+            <img className="fluid card__img-gif" src={BergenGif} />            
             <Img
               fluid={data.bergen.childImageSharp.fluid}
               alt="Bergen STEM landing page"
-            />
+              />
           </div>
           <div className="card__content">
             <h3>Bergen STEM</h3>
@@ -80,7 +85,8 @@ export default ({ data }) => (
           </div>
         </article>
         <article className="card">
-          <div className="card__img">
+          <div className="card__img card__img--has-gif">            
+            <img className="fluid card__img-gif" src={FilesGif} />            
             <Img
               fluid={data.justFiles.childImageSharp.fluid}
               alt="File Hosting App Landing Page"
@@ -93,11 +99,6 @@ export default ({ data }) => (
               Developed a web API that provides user-authentcation and CRUD
               functionality for files hosted on an S3 bucket. Designed and built
               a responsive and accessible client-app using GatsbyJS (React).
-              {/* A file-hosting application that emphasizes simplicity. Features a
-              GatsbyJS front-end and a Flask back-end. The Flask API provides
-              users the ability to upload, download, and delete files from an S3
-              bucket, as well provide user authentication. The client app is
-              responsive, accessible, and utilizes the Fetch API for ajax. */}
             </p>
             <small>
               <strong>Backend: </strong>
@@ -138,7 +139,8 @@ export default ({ data }) => (
           </div>
         </article>
         <article className="card">
-          <div className="card__img">
+          <div className="card__img card__img--has-gif">
+            <img className="fluid card__img-gif" src={ToViewGif} />            
             <Img
               fluid={data.toViewIt.childImageSharp.fluid}
               alt="Gatsby Docs are awesome"

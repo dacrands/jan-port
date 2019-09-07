@@ -206,9 +206,29 @@ small {
       }
     }
   }
-  &__img {    
+  &__img {        
+    position: relative;
+    background: white;
+    transition: 350ms ease;
     .gatsby-image-wrapper {
-      box-shadow: 0 0.063em 0.313em 0 rgba(0,0,0,.07), 0 0.438em 1.063em 0 rgba(0,0,0,.1);
+      box-shadow: 0 0.063em 0.313em 0 rgba(0,0,0,.07), 0 0.438em 1.063em 0 rgba(0,0,0,.1);         
+    }
+    &-gif {            
+      position: absolute;      
+      top: 0;
+      bottom: 0;          
+      z-index: -1;       
+    }
+    &--has-gif {
+      &:hover {
+        background: none;
+        .gatsby-image-wrapper {        
+          display: none;
+        }          
+        &-gif {
+          z-index: 1;
+        }      
+      }
     }
   }
     
