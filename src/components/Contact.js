@@ -61,7 +61,7 @@ export default class Contact extends React.Component {
               <label htmlFor="name" ref="nameLabel">
                 <small>01.</small>
                 {` `}
-                Your name
+                Name
               </label>
               <input
                 required
@@ -76,7 +76,7 @@ export default class Contact extends React.Component {
               <label htmlFor="email" ref="emailLabel">
                 <small>02.</small>
                 {` `}
-                Your email
+                Email
               </label>
               <input
                 required
@@ -90,7 +90,7 @@ export default class Contact extends React.Component {
             <p className="form__item">
               <label htmlFor="message" ref="textareaLabel">
                 <small>03.</small>
-                {` `}Your message
+                {` `}Message
               </label>
               <textarea
                 required
@@ -104,7 +104,6 @@ export default class Contact extends React.Component {
             </p>
             <div className="form__item">
               <button className="btn" type="submit">
-                <span><small>.04</small></span>
                 Send
               </button>
             </div>
