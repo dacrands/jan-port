@@ -8,6 +8,8 @@ import FilesGif from "../images/gifs/justFiles.gif"
 import BergenGif from "../images/gifs/bergenstem.gif"
 import ToViewGif from "../images/gifs/toviewit.gif"
 
+import FilesVideo from "../images/justfiles.mp4"
+
 import Contact from "../components/Contact"
 
 export default ({ data }) => (
@@ -47,8 +49,8 @@ export default ({ data }) => (
       <h2 className="text__title text--red text--space">Portfolio</h2>
       <div>
         <article className="card">
-          <div className="card__img card__img--has-gif">            
-            <img className="fluid card__img-gif" src={BergenGif} />            
+          <div className="card__img card__img--has-video">                        
+            <video loop muted controls className="fluid card__img-video" src={FilesVideo} />
             <Img
               fluid={data.bergen.childImageSharp.fluid}
               alt="Bergen STEM landing page"
@@ -85,8 +87,8 @@ export default ({ data }) => (
           </div>
         </article>
         <article className="card">
-          <div className="card__img card__img--has-gif">            
-            <img className="fluid card__img-gif" src={FilesGif} />            
+          <div className="card__img card__img--has-video">            
+            <video loop muted controls className="fluid card__img-video" src={FilesVideo} />
             <Img
               fluid={data.justFiles.childImageSharp.fluid}
               alt="File Hosting App Landing Page"
@@ -139,8 +141,8 @@ export default ({ data }) => (
           </div>
         </article>
         <article className="card">
-          <div className="card__img card__img--has-gif">
-            <img className="fluid card__img-gif" src={ToViewGif} />            
+          <div className="card__img card__img--has-video">
+            <video loop muted controls className="fluid card__img-video" src={FilesVideo} />    
             <Img
               fluid={data.toViewIt.childImageSharp.fluid}
               alt="Gatsby Docs are awesome"

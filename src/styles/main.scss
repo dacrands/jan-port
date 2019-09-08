@@ -213,21 +213,25 @@ small {
     .gatsby-image-wrapper {
       box-shadow: 0 0.063em 0.313em 0 rgba(0,0,0,.07), 0 0.438em 1.063em 0 rgba(0,0,0,.1);         
     }
-    &-gif {            
+    &-video {            
+      z-index: -1;       
       position: absolute;      
       top: 0;
-      bottom: 0;          
-      z-index: -1;       
+      bottom: 0;       
+      opacity: 0;   
+      transition: 350ms ease;
     }
-    &--has-gif {
+    &--has-video {
       &:hover {
         background: none;
+        .card__img-video{
+          z-index: 2;
+          opacity: 1;   
+        }
         .gatsby-image-wrapper {        
           display: none;
-        }          
-        &-gif {
-          z-index: 1;
-        }      
+          z-index: -1;
+        }               
       }
     }
   }
@@ -277,14 +281,16 @@ small {
       &-gif {
         display: none;        
       }
-      &:hover {
-        .gatsby-image-wrapper {          
-          display: block;
-          opacity: 0;
-        }
-        .card__img-gif {
-          display: block;    
-          z-index: 1;                  
+      &--has-gif {
+        &:hover {
+          .gatsby-image-wrapper {          
+            display: block;
+            opacity: 0;
+          }
+          .card__img-gif {
+            display: block;    
+            z-index: 1;                  
+          }
         }
       }
     }
