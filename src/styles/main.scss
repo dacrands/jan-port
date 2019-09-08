@@ -281,13 +281,13 @@ small {
       &-gif {
         display: none;        
       }
-      &--has-gif {
+      &--has-video {
         &:hover {
           .gatsby-image-wrapper {          
             display: block;
             opacity: 0;
           }
-          .card__img-gif {
+          .card__img-video {
             display: block;    
             z-index: 1;                  
           }
