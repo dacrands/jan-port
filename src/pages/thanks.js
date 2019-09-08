@@ -11,7 +11,7 @@ const Thanks = () => (
       <p>I'll read it and get back to you</p>
       <Link to="/">Go back home</Link>
     </div>
-</div>
+  </div>
 )
 
 export default Thanks

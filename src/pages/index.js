@@ -16,9 +16,9 @@ export default ({ data }) => (
         <h1 className="text__title">David Crandall</h1>
       </div>
       <div className="header__content">
-        <p className="text--red">          
-          I am a full-stack web developer with a passion for data-science.          
-        </p>      
+        <p className="text--red">
+          I am a full-stack web developer with a passion for data-science.
+        </p>
         <p>
           <a
             className="btn btn--big"
@@ -46,12 +46,18 @@ export default ({ data }) => (
       <h2 className="text__title text--red text--space">Portfolio</h2>
       <div>
         <article className="card">
-          <div className="card__img card__img--has-video">                        
-            <video playsInline muted controls preload="none" className="fluid card__img-video" src={BergenVideo} />
+          <div className="card__img card__img--has-video">
+            <video
+              playsInline
+              muted
+              controls
+              className="fluid card__img-video"
+              src={BergenVideo}
+            />
             <Img
               fluid={data.bergen.childImageSharp.fluid}
               alt="Bergen STEM landing page"
-              />
+            />
           </div>
           <div className="card__content">
             <h3>Bergen STEM</h3>
@@ -84,8 +90,14 @@ export default ({ data }) => (
           </div>
         </article>
         <article className="card">
-          <div className="card__img card__img--has-video">            
-            <video playsInline muted controls preload="none" className="fluid card__img-video" src={FilesVideo} />
+          <div className="card__img card__img--has-video">
+            <video
+              playsInline
+              muted
+              controls
+              className="fluid card__img-video"
+              src={FilesVideo}
+            />
             <Img
               fluid={data.justFiles.childImageSharp.fluid}
               alt="File Hosting App Landing Page"
@@ -139,7 +151,13 @@ export default ({ data }) => (
         </article>
         <article className="card">
           <div className="card__img card__img--has-video">
-            <video playsInline muted controls preload="none" className="fluid card__img-video" src={FilesVideo} />    
+            <video
+              playsInline
+              muted
+              controls
+              className="fluid card__img-video"
+              src={FilesVideo}
+            />
             <Img
               fluid={data.toViewIt.childImageSharp.fluid}
               alt="Gatsby Docs are awesome"
