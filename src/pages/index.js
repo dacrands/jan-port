@@ -4,11 +4,8 @@ import Img from "gatsby-image"
 
 import "../styles/main.scss"
 
-import FilesGif from "../images/gifs/justFiles.gif"
-import BergenGif from "../images/gifs/bergenstem.gif"
-import ToViewGif from "../images/gifs/toviewit.gif"
-
 import FilesVideo from "../images/justfiles.mp4"
+import BergenVideo from "../images/bergenstem.mp4"
 
 import Contact from "../components/Contact"
 
@@ -50,7 +47,7 @@ export default ({ data }) => (
       <div>
         <article className="card">
           <div className="card__img card__img--has-video">                        
-            <video loop muted controls className="fluid card__img-video" src={FilesVideo} />
+            <video loop muted controls className="fluid card__img-video" src={BergenVideo} />
             <Img
               fluid={data.bergen.childImageSharp.fluid}
               alt="Bergen STEM landing page"
