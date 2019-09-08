@@ -47,7 +47,7 @@ export default ({ data }) => (
       <div>
         <article className="card">
           <div className="card__img card__img--has-video">                        
-            <video loop muted controls className="fluid card__img-video" src={BergenVideo} />
+            <video playsInline muted controls preload="none" className="fluid card__img-video" src={BergenVideo} />
             <Img
               fluid={data.bergen.childImageSharp.fluid}
               alt="Bergen STEM landing page"
@@ -85,7 +85,7 @@ export default ({ data }) => (
         </article>
         <article className="card">
           <div className="card__img card__img--has-video">            
-            <video loop muted controls className="fluid card__img-video" src={FilesVideo} />
+            <video playsInline muted controls preload="none" className="fluid card__img-video" src={FilesVideo} />
             <Img
               fluid={data.justFiles.childImageSharp.fluid}
               alt="File Hosting App Landing Page"
@@ -139,7 +139,7 @@ export default ({ data }) => (
         </article>
         <article className="card">
           <div className="card__img card__img--has-video">
-            <video loop muted controls className="fluid card__img-video" src={FilesVideo} />    
+            <video playsInline muted controls preload="none" className="fluid card__img-video" src={FilesVideo} />    
             <Img
               fluid={data.toViewIt.childImageSharp.fluid}
               alt="Gatsby Docs are awesome"
