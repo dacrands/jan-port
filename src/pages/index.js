@@ -52,7 +52,8 @@ export default ({ data }) => (
           <div className="card__img card__img--has-video">
             <video
               src={BergenVideo}     
-              poster={data.bergen.childImageSharp.src}         
+              poster={data.bergen.childImageSharp.src}  
+              playsInline       
               loop                            
               muted
               controls
