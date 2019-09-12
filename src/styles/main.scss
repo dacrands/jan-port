@@ -144,7 +144,7 @@ small {
   // outline: 1px dashed blue;
   margin: 0 auto;    
   display: grid;
-  grid-template-columns:  1fr 400px;
+  grid-template-columns:  1fr 510px;
   .btn {
     margin-left: 1rem;
   }
@@ -252,13 +252,7 @@ small {
   }
 }
 
-@media(max-width: 500px) {
-  .btn {
-    padding: 3px 6px;
-  }
-  .btn--big {    
-    padding: 7px 14px;
-  }
+@media(max-width: 620px) {
   .header {
     grid-template-columns: 80px 1fr;
     .btn {
@@ -267,8 +261,19 @@ small {
     }
     &__content {
       font-size: 16px;  
+      max-width: 400px;
+      justify-self: end;
     }
   }
+}
+
+@media(max-width: 500px) {
+  .btn {
+    padding: 3px 6px;
+  }
+  .btn--big {    
+    padding: 7px 14px;
+  }  
   .card {
     display: block;
     .btn {
