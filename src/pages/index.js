@@ -265,7 +265,7 @@ export const query = graphql`
     bergen: file(relativePath: { eq: "stem-landing.JPG" }) {
       childImageSharp {
         id
-        fluid {
+        fluid (toFormat: PNG, maxWidth: 600 ) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -273,7 +273,7 @@ export const query = graphql`
     toViewIt: file(relativePath: { eq: "to-view-it-2.JPG" }) {
       childImageSharp {
         id
-        fluid {
+        fluid (toFormat: PNG, maxWidth: 600 ){
           ...GatsbyImageSharpFluid
         }
       }
@@ -281,7 +281,7 @@ export const query = graphql`
     justFiles: file(relativePath: { eq: "justfiles.jpg" }) {
       childImageSharp {
         id
-        fluid {
+        fluid (toFormat: PNG, maxWidth: 600 ){
           ...GatsbyImageSharpFluid
         }
       }
@@ -289,7 +289,7 @@ export const query = graphql`
     nytApp: file(relativePath: { eq: "nytapp.JPG" }) {
       childImageSharp {
         id
-        fluid {
+        fluid (toFormat: PNG, maxWidth: 600 ){
           ...GatsbyImageSharpFluid
         }
       }
