@@ -7,6 +7,7 @@ import "../styles/main.scss"
 import FilesVideo from "../images/justfiles.mp4"
 import BergenVideo from "../images/bergenstem.mp4"
 import ToViewVideo from "../images/toviewit.mp4"
+import TimesVideo from "../images/times.mp4"
 
 import Contact from "../components/Contact"
 
@@ -202,7 +203,15 @@ export default ({ data }) => (
           </div>
         </article>
         <article className="card">
-          <div className="card__img">
+          <div className="card__img card__img--has-video">
+            <video
+              src={TimesVideo}
+              poster={data.nytApp.childImageSharp.src}
+              playsInline
+              muted
+              controls
+              className="fluid card__img-video"
+            />
             <Img
               fluid={data.nytApp.childImageSharp.fluid}
               alt="Gatsby Docs are awesome"
