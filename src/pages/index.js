@@ -6,6 +6,7 @@ import "../styles/main.scss"
 
 import FilesVideo from "../images/justfiles.mp4"
 import BergenVideo from "../images/bergenstem.mp4"
+import ToViewVideo from "../images/toviewit.mp4"
 
 import Contact from "../components/Contact"
 
@@ -17,7 +18,8 @@ export default ({ data }) => (
       </div>
       <div className="header__content">
         <p className="text--red">
-          I am a full-stack web developer with a passion for data-science.
+          I am a software engineer that
+          specializes in full-stack web development.
         </p>
         <p>
           <a
@@ -48,7 +50,8 @@ export default ({ data }) => (
         <article className="card">
           <div className="card__img card__img--has-video">
             <video
-              src={BergenVideo}              
+              src={BergenVideo}     
+              poster={data.bergen.childImageSharp.src}         
               loop                            
               muted
               controls
@@ -94,6 +97,7 @@ export default ({ data }) => (
           <div className="card__img card__img--has-video">
             <video
               src={FilesVideo}
+              poster={data.justFiles.childImageSharp.src}
               playsInline
               muted
               controls
@@ -153,7 +157,7 @@ export default ({ data }) => (
         <article className="card">
           <div className="card__img card__img--has-video">
             <video
-              src={FilesVideo}
+              src={ToViewVideo}
               playsInline
               muted
               controls
