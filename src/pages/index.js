@@ -288,7 +288,7 @@ export const query = graphql`
         }
       }
     }
-    justFiles: file(relativePath: { eq: "justfiles.jpg" }) {
+    justFiles: file(relativePath: { eq: "justfiles2.jpg" }) {
       childImageSharp {
         id
         fluid (toFormat: PNG, maxWidth: 600 ){
