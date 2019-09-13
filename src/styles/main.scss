@@ -38,7 +38,6 @@ small {
   box-shadow: 0 0.938em 2.188em rgba(50,50,93,.1), 0 0.313em 0.938em rgba(0,0,0,.07);
   margin-top: 20px;
   padding: 50px 0;
-
   text-align: center;
 }
 
@@ -62,6 +61,44 @@ small {
     color: $red;  
   }  
 }  
+
+
+.btn {
+  position: relative;
+  display: inline-block;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 5px 10px;
+  background: $red--bg;
+  letter-spacing: 1px;
+  color: $red--dark;
+  transition: all 400ms ease;
+  &--big {
+    padding: 10px 20px;
+    letter-spacing: 2px;
+  }
+  &:before {
+    content: "";
+    position: absolute;        
+    z-index: -2; 
+    left: 0;
+    top: 0;
+    height: 100%;    
+    width: 0;
+    background: $red;
+    transition: all 200ms ease;
+  }
+  &:hover {
+    color: white;
+    small {
+      transition: all 400ms ease;
+      color: white;
+    }
+    &:before {    
+      width: 100%;
+    } 
+  }
+}
 
 .form {
   // outline: 1px solid red;  
@@ -102,44 +139,9 @@ small {
     grid-area: 1 / span 2;    
   }
 }
-
-.btn {
-  position: relative;
-  display: inline-block;
-  font-size: 12px;
-  text-decoration: none;
-  padding: 5px 10px;
-  background: $red--bg;
-  letter-spacing: 1px;
-  color: $red--dark;
-  transition: all 400ms ease;
-  &--big {
-    padding: 10px 20px;
-    letter-spacing: 2px;
-  }
-  &:before {
-    content: "";
-    position: absolute;        
-    z-index: -2; 
-    left: 0;
-    top: 0;
-    height: 100%;    
-    width: 0;
-    background: $red;
-    transition: all 200ms ease;
-  }
-  &:hover {
-    color: white;
-    small {
-      transition: all 400ms ease;
-      color: white;
-    }
-    &:before {    
-      width: 100%;
-    } 
-  }
-}
-
+/* =======================
+          HEADER
+ ======================= */
 .header {  
   // outline: 1px dashed blue;
   margin: 0 auto;    
@@ -164,6 +166,9 @@ small {
   }
 }
 
+/* =======================
+          CARD
+ ======================= */
 .card {
   display: flex;    
   margin-bottom: 5rem;  
@@ -233,8 +238,7 @@ small {
         }               
       }
     }
-  }
-    
+  }    
   &:nth-of-type(even) {
     flex-direction: row-reverse;        
     .btn {
@@ -252,6 +256,9 @@ small {
   }
 }
 
+/* =======================
+          MEDIA
+ ======================= */
 @media(max-width: 620px) {
   .header {
     grid-template-columns: 80px 1fr;
@@ -301,7 +308,8 @@ small {
     &__content {
       text-align: left;
       border-top: 0;      
-      padding: 0;
+      // Override nth-of-type(even) selector
+      padding: 0 !important;
       h3:after {
         left: 0;
       }
@@ -328,5 +336,4 @@ small {
       margin: 0 auto;                
     }
   }
-
 }
