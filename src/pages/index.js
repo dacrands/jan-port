@@ -9,7 +9,9 @@ import BergenVideo from "../images/bergenstem.mp4"
 import ToViewVideo from "../images/toviewit.mp4"
 import TimesVideo from "../images/times.mp4"
 
+
 import Contact from "../components/Contact"
+
 
 export default ({ data }) => (
   <main className="container">
@@ -52,10 +54,9 @@ export default ({ data }) => (
           <div className="card__img card__img--has-video">
             <video
               src={BergenVideo}     
-              poster={data.bergen.childImageSharp.src}  
-              playsInline       
-              loop                            
-              muted
+              poster={"stem-landing.JPG"}                
+              playsInline                     
+              muted              
               controls
               className="fluid card__img-video"
             >
@@ -99,9 +100,9 @@ export default ({ data }) => (
           <div className="card__img card__img--has-video">
             <video
               src={FilesVideo}
-              poster={data.justFiles.childImageSharp.src}
-              playsInline
-              muted
+              poster={"justfiles2.jpg"}                
+              playsInline                     
+              muted              
               controls
               className="fluid card__img-video"
             />
@@ -160,9 +161,10 @@ export default ({ data }) => (
           <div className="card__img card__img--has-video">
             <video
               src={ToViewVideo}
-              playsInline
-              muted
-              controls
+              poster={"to-view-it-2.JPG"}                
+              playsInline                     
+              muted              
+              controls            
               className="fluid card__img-video"
             />
             <Img
@@ -207,9 +209,9 @@ export default ({ data }) => (
           <div className="card__img card__img--has-video">
             <video
               src={TimesVideo}
-              poster={data.nytApp.childImageSharp.src}
-              playsInline
-              muted
+              poster={"nytapp.JPG"}                
+              playsInline                     
+              muted              
               controls
               className="fluid card__img-video"
             />
