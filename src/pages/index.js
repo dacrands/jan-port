@@ -54,7 +54,7 @@ export default ({ data }) => (
           <div className="card__img card__img--has-video">
             <video
               src={BergenVideo}     
-              poster={"stem-landing.JPG"}                
+              poster={data.bergen.childImageSharp.fluid.src}                
               playsInline                     
               muted              
               controls
@@ -100,7 +100,7 @@ export default ({ data }) => (
           <div className="card__img card__img--has-video">
             <video
               src={FilesVideo}
-              poster={"justfiles2.jpg"}                
+              poster={data.justFiles.childImageSharp.fluid.src}                
               playsInline                     
               muted              
               controls
@@ -161,7 +161,7 @@ export default ({ data }) => (
           <div className="card__img card__img--has-video">
             <video
               src={ToViewVideo}
-              poster={"to-view-it-2.JPG"}                
+              poster={data.toViewIt.childImageSharp.fluid.src}                
               playsInline                     
               muted              
               controls            
@@ -209,7 +209,7 @@ export default ({ data }) => (
           <div className="card__img card__img--has-video">
             <video
               src={TimesVideo}
-              poster={"nytapp.JPG"}                
+              poster={data.nytApp.childImageSharp.fluid.src}                
               playsInline                     
               muted              
               controls
