@@ -4,10 +4,10 @@ import Img from "gatsby-image"
 
 import "../styles/main.scss"
 
-import FilesVideo from "../images/justfiles.mp4"
-import BergenVideo from "../images/bergenstem.mp4"
-import ToViewVideo from "../images/toviewit.mp4"
-import TimesVideo from "../images/times.mp4"
+import FilesVideo from "../media/justfiles.mp4"
+import BergenVideo from "../media/bergenstem.mp4"
+import ToViewVideo from "../media/toviewit.mp4"
+import TimesVideo from "../media/times.mp4"
 
 
 import Contact from "../components/Contact"
