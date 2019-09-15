@@ -17,7 +17,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "David-Crandall"
+        name: "David-Crandall",
+        icon: "src/media/icon.png",
       }
     },
     `gatsby-plugin-sass`,
