@@ -1,11 +1,25 @@
 import React from "react"
-import Helmet from "./Helmet"
+import SEO from "./SEO"
+import { useStaticQuery, graphql } from "gatsby"
 
-export default ({ children}) => (
-  <>
-    <Helmet/>
-    <main className="container">
-      {children}
-    </main>
-  </>
-)
+const Layout = ({ children }) => {
+  const data = useStaticQuery(graphql`
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)
+
+  return (
+    <>
+      <main className="container">
+        {children}
+      </main>
+    </>
+  )
+}
+
+export default Layout
