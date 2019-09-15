@@ -52,6 +52,7 @@ export default () => (
           <article className="card">
             <div className="card__img card__img--has-video">
               <video
+                preload={"none"}
                 src={BergenVideo}
                 poster={data.bergen.childImageSharp.fluid.src}
                 height={212}
@@ -99,6 +100,7 @@ export default () => (
           <article className="card">
             <div className="card__img card__img--has-video">
               <video
+                preload={"none"}
                 src={FilesVideo}
                 poster={data.justFiles.childImageSharp.fluid.src}
                 height={244}
@@ -163,6 +165,7 @@ export default () => (
           <article className="card">
             <div className="card__img card__img--has-video">
               <video
+                preload={"none"}
                 src={ToViewVideo}
                 poster={data.toViewIt.childImageSharp.fluid.src}
                 height={244}
@@ -213,6 +216,7 @@ export default () => (
           <article className="card">
             <div className="card__img card__img--has-video">
               <video
+                preload={"none"}
                 src={TimesVideo}
                 poster={data.nytApp.childImageSharp.fluid.src}
                 height={244}
