@@ -257,8 +257,62 @@ small {
 }
 
 /* =======================
+          HELLO
+ ======================= */
+.hello {  
+  // outline: 1px solid $red--bg;  
+  margin-top: 80px;
+  margin-right: 20px;
+  padding: 50px; 
+  position: relative;
+  overflow: hidden;
+  max-width: 300px;
+  max-height: 300px;
+  &__msg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    font-family: monospace;
+    font-size: 120px;
+    text-align: center;
+    font-weight: bold;
+    color: $red--bg;
+    z-index: -1;
+  }
+  &__box {
+    // outline: 1px dashed red;      
+    transform: rotate(-30deg) translateX(-150px) translateY(-280px);
+    width: 1000px;  
+    text-align: center;
+    span {
+      opacity: 0.5;
+      display: inline-block;
+      background: $red--bg;
+      padding: 15px;
+      margin: 8px;
+      font-size: 15px;
+      color: $red;
+      font-weight: bold;
+      transition: all 200ms ease;
+      &:hover {
+        background: $red;
+        color: white;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+/* =======================
           MEDIA
  ======================= */
+@media(max-width: 768px) {
+  .hello__container {
+    display: none;
+  }
+}
+
 @media(max-width: 620px) {
   .header {
     grid-template-columns: 80px 1fr;
