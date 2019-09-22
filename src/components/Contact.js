@@ -36,8 +36,8 @@ export default class Contact extends React.Component {
 
   render() {
     return (
-      <section id="contact" className="">
-        <div className="">
+      <section id="contact">
+        <div>
           <h2 className="text__title text--red">Contact</h2>
         </div>
         <div className="card">
