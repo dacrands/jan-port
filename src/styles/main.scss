@@ -280,10 +280,9 @@ small {
     color: $red--bg;
     z-index: -1;
   }
-  &__box {
-    // outline: 1px dashed red;      
-    transform: rotate(-30deg) translateX(-150px) translateY(-280px);
-    width: 1000px;  
+  &__box {    
+    transform: rotate(-30deg) translateX(-20px) translateY(-160px);
+    width: 600px;  
     text-align: center;
     span {
       opacity: 0.5;
@@ -291,7 +290,7 @@ small {
       background: $red--bg;
       padding: 15px;
       margin: 8px;
-      font-size: 15px;
+      font-size: 10px;
       color: $red;
       font-weight: bold;
       transition: all 200ms ease;
