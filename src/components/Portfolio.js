@@ -119,7 +119,7 @@ export default () => (
               <h3>Just Files</h3>
               <p>
                 File-hosting web app offering file search and file descriptions.
-                Developed a web API that provides user-authentcation and CRUD
+                Developed a web API that provides user-authentication and CRUD
                 functionality for files hosted on an S3 bucket. Designed and
                 built a responsive and accessible client-app using GatsbyJS
                 (React).
