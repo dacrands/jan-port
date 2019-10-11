@@ -270,9 +270,11 @@ small {
   max-height: 300px;
   &__msg {
     position: absolute;
-    top: 0;
+    top: 50%;
     right: 0;
-    margin: 0;
+    margin: 0;    
+    // 140 is half the height of the el
+    margin-top: -140px;
     font-family: monospace;
     font-size: 120px;
     text-align: center;
