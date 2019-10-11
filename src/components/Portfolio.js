@@ -2,16 +2,16 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-import FilesVideo from "../media/justfiles.mp4"
-import BergenVideo from "../media/bergenstem.mp4"
-import ToViewVideo from "../media/toviewit.mp4"
-import TimesVideo from "../media/times.mp4"
+import FilesVideo from "../media/videos/justfiles.mp4"
+import BergenVideo from "../media/videos/bergenstem.mp4"
+import ToViewVideo from "../media/videos/toviewit.mp4"
+import TimesVideo from "../media/videos/times.mp4"
 
 export default () => (
   <StaticQuery
     query={graphql`
       query {
-        bergen: file(relativePath: { eq: "stem-landing.JPG" }) {
+        bergen: file(relativePath: { eq: "imgs/stem-landing.JPG" }) {
           childImageSharp {
             id
             fluid(toFormat: PNG, maxWidth: 600) {
@@ -19,7 +19,7 @@ export default () => (
             }
           }
         }
-        toViewIt: file(relativePath: { eq: "to-view-it-2.JPG" }) {
+        toViewIt: file(relativePath: { eq: "imgs/to-view-it-2.JPG" }) {
           childImageSharp {
             id
             fluid(toFormat: PNG, maxWidth: 600) {
@@ -27,7 +27,7 @@ export default () => (
             }
           }
         }
-        justFiles: file(relativePath: { eq: "justfiles2.jpg" }) {
+        justFiles: file(relativePath: { eq: "imgs/justfiles2.jpg" }) {
           childImageSharp {
             id
             fluid(toFormat: PNG, maxWidth: 600) {
@@ -35,7 +35,7 @@ export default () => (
             }
           }
         }
-        nytApp: file(relativePath: { eq: "nytapp.JPG" }) {
+        nytApp: file(relativePath: { eq: "imgs/nytapp.JPG" }) {
           childImageSharp {
             id
             fluid(toFormat: PNG, maxWidth: 600) {
