@@ -197,10 +197,10 @@ export default () => (
               <h3>Just Files</h3>
               <p>
                 File-hosting web app offering file search and file descriptions.
-                Developed a web API that provides user-authentication and CRUD
+                Developed a Flask web API that provides user-authentication and CRUD
                 functionality for files hosted on an S3 bucket. Designed and
                 built a responsive and accessible client-app using GatsbyJS
-                (React).
+                (React). 
               </p>
               <small>
                 <strong>Backend: </strong>
@@ -266,10 +266,12 @@ export default () => (
             <div className="card__content">
               <h3>To View It</h3>
               <p>
-                MVC to-do list application that features a scrolling-stocker
+                An MVC style to-do list application that features a scrolling-stocker
                 ticker, weather information, and a custom background Youtube
-                video. Uses JSON Web Tokens for email verifications and password
-                resets.
+                video. Deployed Flask app and MySQL database on DigitalOcean 
+                using Docker containers.
+                {/* Uses JSON Web Tokens for email verifications and password
+                resets. */}
               </p>
               <small>
                 Flask, MySQL, JinJa2 Templates, Docker, JSON Web Tokens, Nginx,
