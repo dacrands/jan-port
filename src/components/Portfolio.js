@@ -6,6 +6,7 @@ import FilesVideo from "../media/videos/justfiles.mp4"
 import BergenVideo from "../media/videos/bergenstem.mp4"
 import ToViewVideo from "../media/videos/toviewit.mp4"
 import TimesVideo from "../media/videos/times.mp4"
+import StudyFriend from "../media/videos/studyfriend-ui.mp4"
 
 export default () => (
   <StaticQuery
@@ -43,12 +44,80 @@ export default () => (
             }
           }
         }
+        studyFriend: file(relativePath: { eq: "imgs/study-friend-ui.jpg" }) {
+          childImageSharp {
+            id
+            fluid(toFormat: PNG, maxWidth: 600) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     `}
     render={data => (
       <section className="section">
         <h2 className="text__title text--red text--space">Portfolio</h2>
         <div>
+          {/* ------------------------
+                  STUDY FRIEND
+          ------------------------ */}
+          <article className="card">
+            <div className="card__img card__img--has-video">
+              <video
+                preload={"none"}
+                src={StudyFriend}
+                poster={data.studyFriend.childImageSharp.fluid.src}
+                height={212}
+                width={435}
+                playsInline
+                muted
+                controls
+                className="fluid card__img-video"
+              ></video>
+              <Img
+                fluid={data.studyFriend.childImageSharp.fluid}
+                alt="Bergen STEM landing page"
+              />
+            </div>
+            <div className="card__content">
+              <h3>Study Friend</h3>
+              <p>
+                Razor pages application
+                made to help people study.
+                Uses ASP.NET Core Identity
+                for user authentication.
+                Deployed app and SQL database
+                using Azure services. Designed responsive user-interface 
+                with Bootstrap 4.
+              </p>
+              <small>
+                ASP.NET Core, Entity Framework, 
+                Razor Pages, Azure Services, Bootstrap 4
+              </small>
+              <p>
+                <a
+                  href="https://studyfriend20191005031140.azurewebsites.net"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn"
+                >
+                  Study Friend
+                </a>
+                {` `}
+                <a
+                  href="https://github.com/dacrands/bergen-gatsby-cms"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn"
+                >
+                  GitHub Repo
+                </a>
+              </p>
+            </div>
+          </article>
+          {/* ------------------------
+                  BERGEN STEM
+          ------------------------ */}
           <article className="card">
             <div className="card__img card__img--has-video">
               <video
@@ -97,6 +166,9 @@ export default () => (
               </p>
             </div>
           </article>
+          {/* ------------------------
+                  JUST FILES
+          ------------------------ */}
           <article className="card">
             <div className="card__img card__img--has-video">
               <video
@@ -162,6 +234,9 @@ export default () => (
               </p>
             </div>
           </article>
+          {/* ------------------------
+                  TO VIEW IT
+          ------------------------ */}
           <article className="card">
             <div className="card__img card__img--has-video">
               <video
@@ -213,6 +288,9 @@ export default () => (
               </p>
             </div>
           </article>
+          {/* ------------------------
+                  NYT APP
+          ------------------------ */}
           <article className="card">
             <div className="card__img card__img--has-video">
               <video
