@@ -73,10 +73,12 @@ export default () => (
                 muted
                 controls
                 className="fluid card__img-video"
+                onMouseLeave={e => e.target.pause()}
+                onMouseEnter={e => e.target.play()}
               ></video>
               <Img
                 fluid={data.studyFriend.childImageSharp.fluid}
-                alt="Bergen STEM landing page"
+                alt="Bergen STEM landing page"                                                
               />
             </div>
             <div className="card__content">
@@ -130,6 +132,8 @@ export default () => (
                 muted
                 controls
                 className="fluid card__img-video"
+                onMouseLeave={e => e.target.pause()}
+                onMouseEnter={e => e.target.play()}
               ></video>
               <Img
                 fluid={data.bergen.childImageSharp.fluid}
@@ -181,6 +185,8 @@ export default () => (
                 muted
                 controls
                 className="fluid card__img-video"
+                onMouseLeave={e => e.target.pause()}
+                onMouseEnter={e => e.target.play()}
               />
               <Img
                 fluid={data.justFiles.childImageSharp.fluid}
@@ -249,6 +255,8 @@ export default () => (
                 muted
                 controls
                 className="fluid card__img-video"
+                onMouseLeave={e => e.target.pause()}
+                onMouseEnter={e => e.target.play()}
               />
               <Img
                 fluid={data.toViewIt.childImageSharp.fluid}
@@ -303,6 +311,8 @@ export default () => (
                 muted
                 controls
                 className="fluid card__img-video"
+                onMouseLeave={e => e.target.pause()}
+                onMouseEnter={e => e.target.play()}
               />
               <Img
                 fluid={data.nytApp.childImageSharp.fluid}
