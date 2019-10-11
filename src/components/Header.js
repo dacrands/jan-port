@@ -7,7 +7,7 @@ export default () => (
     </div>
     <div className="header__content">
       <p className="text--red">
-        I am a software engineer that specializes in full-stack web development.
+        I am a software engineer that specializes in full stack web development.
       </p>
       <p>
         <a
