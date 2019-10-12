@@ -144,11 +144,13 @@ export default () => (
               <h3>Bergen STEM</h3>
               <p>
                 Progressive web app designed and developed for the STEM program
-                at Bergen Community College. Built with Gatsby and the
+                at Bergen Community College. Built with GatsbyJS
+                (React) and the
                 Netlify-CMS, the site showcases student resources, scholarship
-                information, and student projects.
+                information, and research projects.
               </p>
-              <small>React (GatsbyJS), Sass, Netlify CMS</small>
+              <small>GatsbyJS
+                (React), Sass, Netlify CMS</small>
               <p>
                 <a
                   href="https://bergenstem.com"
@@ -197,7 +199,7 @@ export default () => (
               <h3>Just Files</h3>
               <p>
                 File-hosting web app offering file search and file descriptions.
-                Developed a Flask web API that provides user-authentication and CRUD
+                Developed a Flask API that provides user-authentication and CRUD
                 functionality for files hosted on an S3 bucket. Designed and
                 built a responsive and accessible client-app using GatsbyJS
                 (React). 
