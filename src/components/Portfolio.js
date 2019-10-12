@@ -107,7 +107,7 @@ export default () => (
                 </a>
                 {` `}
                 <a
-                  href="https://github.com/dacrands/bergen-gatsby-cms"
+                  href="https://github.com/dacrands/StudyFriend"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn"
