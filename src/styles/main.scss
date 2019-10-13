@@ -224,6 +224,10 @@ small {
       bottom: 0;       
       opacity: 0;   
       transition: 350ms ease;
+      &:focus-within {
+        z-index: 2;
+        opacity: 1;
+      }
     }
     &--has-video {
       &:hover {
