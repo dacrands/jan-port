@@ -3,6 +3,12 @@ import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Video, Transformation } from "cloudinary-react"
 
+import FilesVideo from "../media/videos/justfiles.mp4"
+import BergenVideo from "../media/videos/bergenstem.mp4"
+import ToViewVideo from "../media/videos/toviewit.mp4"
+import TimesVideo from "../media/videos/times.mp4"
+import StudyFriend from "../media/videos/studyfriend-ui.mp4"
+
 export default () => (
   <StaticQuery
     query={graphql`
