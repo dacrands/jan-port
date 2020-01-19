@@ -1,6 +1,7 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import { Video, Transformation } from "cloudinary-react"
 
 import FilesVideo from "../media/videos/justfiles.mp4"
 import BergenVideo from "../media/videos/bergenstem.mp4"
@@ -63,22 +64,19 @@ export default () => (
           ------------------------ */}
           <article className="card">
             <div className="card__img card__img--has-video">
-              <video
-                preload={"none"}
-                src={StudyFriend}
-                poster={data.studyFriend.childImageSharp.fluid.src}
-                height={212}
-                width={435}
-                playsInline
-                muted
-                controls
+              <Video
+                cloudName="dibzssofz"
+                publicId="studyfriend-ui_bupa79"
+                controls="true"
                 className="fluid card__img-video"
                 onMouseLeave={e => e.target.pause()}
                 onMouseEnter={e => e.target.play()}
-              ></video>
+              >
+                <Transformation height="212" width="435" />
+              </Video>
               <Img
                 fluid={data.studyFriend.childImageSharp.fluid}
-                alt="Bergen STEM landing page"                                                
+                alt="Bergen STEM landing page"
               />
             </div>
             <div className="card__content">
@@ -89,11 +87,11 @@ export default () => (
                 Uses ASP.NET Core Identity
                 for user authentication.
                 Deployed app and SQL database
-                using Azure services. Designed responsive user-interface 
+                using Azure services. Designed responsive user-interface
                 with Bootstrap 4.
               </p>
               <small>
-                ASP.NET Core, Entity Framework, 
+                ASP.NET Core, Entity Framework,
                 Razor Pages, Azure Services, Bootstrap 4
               </small>
               <p>
@@ -122,19 +120,16 @@ export default () => (
           ------------------------ */}
           <article className="card">
             <div className="card__img card__img--has-video">
-              <video
-                preload={"none"}
-                src={BergenVideo}
-                poster={data.bergen.childImageSharp.fluid.src}
-                height={212}
-                width={435}
-                playsInline
-                muted
-                controls
+              <Video
+                cloudName="dibzssofz"
+                publicId="bergenstem_rmmgjn"
+                controls="true"
                 className="fluid card__img-video"
                 onMouseLeave={e => e.target.pause()}
                 onMouseEnter={e => e.target.play()}
-              ></video>
+              >
+                <Transformation height="212" width="435" />
+              </Video>
               <Img
                 fluid={data.bergen.childImageSharp.fluid}
                 alt="Bergen STEM landing page"
@@ -177,19 +172,16 @@ export default () => (
           ------------------------ */}
           <article className="card">
             <div className="card__img card__img--has-video">
-              <video
-                preload={"none"}
-                src={FilesVideo}
-                poster={data.justFiles.childImageSharp.fluid.src}
-                height={244}
-                width={435}
-                playsInline
-                muted
-                controls
+              <Video
+                cloudName="dibzssofz"
+                publicId="justfiles_etcds5"
+                controls="true"
                 className="fluid card__img-video"
                 onMouseLeave={e => e.target.pause()}
                 onMouseEnter={e => e.target.play()}
-              />
+              >
+                <Transformation height="244" width="435" />
+              </Video>              
               <Img
                 fluid={data.justFiles.childImageSharp.fluid}
                 alt="File Hosting App Landing Page"
@@ -202,7 +194,7 @@ export default () => (
                 Developed a Flask API that provides user-authentication and CRUD
                 functionality for files hosted on an S3 bucket. Designed and
                 built a responsive and accessible client-app using GatsbyJS
-                (React). 
+                (React).
               </p>
               <small>
                 <strong>Backend: </strong>
@@ -247,19 +239,16 @@ export default () => (
           ------------------------ */}
           <article className="card">
             <div className="card__img card__img--has-video">
-              <video
-                preload={"none"}
-                src={ToViewVideo}
-                poster={data.toViewIt.childImageSharp.fluid.src}
-                height={244}
-                width={435}
-                playsInline
-                muted
-                controls
+              <Video
+                cloudName="dibzssofz"
+                publicId="toviewit_yg2aa7"
+                controls="true"
                 className="fluid card__img-video"
                 onMouseLeave={e => e.target.pause()}
                 onMouseEnter={e => e.target.play()}
-              />
+              >
+                <Transformation height="244" width="435" />
+              </Video>
               <Img
                 fluid={data.toViewIt.childImageSharp.fluid}
                 alt="Gatsby Docs are awesome"
@@ -270,7 +259,7 @@ export default () => (
               <p>
                 An MVC style to-do list application that features a scrolling-stocker
                 ticker, weather information, and a custom background Youtube
-                video. Deployed Flask app and MySQL database on DigitalOcean 
+                video. Deployed Flask app and MySQL database on DigitalOcean
                 using Docker containers.
                 {/* Uses JSON Web Tokens for email verifications and password
                 resets. */}
@@ -305,19 +294,16 @@ export default () => (
           ------------------------ */}
           <article className="card">
             <div className="card__img card__img--has-video">
-              <video
-                preload={"none"}
-                src={TimesVideo}
-                poster={data.nytApp.childImageSharp.fluid.src}
-                height={244}
-                width={435}
-                playsInline
-                muted
-                controls
+            <Video
+                cloudName="dibzssofz"
+                publicId="times_huys6s"
+                controls="true"
                 className="fluid card__img-video"
                 onMouseLeave={e => e.target.pause()}
                 onMouseEnter={e => e.target.play()}
-              />
+              >
+                <Transformation height="244" width="435" />
+              </Video>
               <Img
                 fluid={data.nytApp.childImageSharp.fluid}
                 alt="Gatsby Docs are awesome"
