@@ -151,7 +151,7 @@ export default () => (
                 DigitalOcean
                 <br />
                 <strong>Frontend: </strong>
-                React (GatsbyJS), Sass, Fetch API, Netlify
+                GatsbyJS (React), Sass, Fetch API, Netlify
               </small>
               <p>
                 <a
