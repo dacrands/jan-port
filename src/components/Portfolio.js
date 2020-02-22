@@ -59,65 +59,6 @@ export default () => (
         <h2 className="text__title text--red text--space">Portfolio</h2>
         <div>
           {/* ------------------------
-                  STUDY FRIEND
-          ------------------------ */}
-          <article className="card">
-            <div className="card__img card__img--has-video">
-              <video
-                preload={"none"}
-                src={StudyFriend}
-                poster={data.studyFriend.childImageSharp.fluid.src}
-                height={212}
-                width={435}
-                playsInline
-                muted
-                controls
-                className="fluid card__img-video"
-                onMouseLeave={e => e.target.pause()}
-                onMouseEnter={e => e.target.play()}
-              ></video>
-              <Img
-                fluid={data.studyFriend.childImageSharp.fluid}
-                alt="Bergen STEM landing page"                                                
-              />
-            </div>
-            <div className="card__content">
-              <h3>Study Friend</h3>
-              <p>
-                Razor pages application
-                made to help people study.
-                Uses ASP.NET Core Identity
-                for user authentication.
-                Deployed app and SQL database
-                using Azure services. Designed responsive user-interface 
-                with Bootstrap 4.
-              </p>
-              <small>
-                ASP.NET Core, Entity Framework, 
-                Razor Pages, Azure Services, Bootstrap 4
-              </small>
-              <p>
-                <a
-                  href="https://studyfriend20191005031140.azurewebsites.net"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn"
-                >
-                  Study Friend
-                </a>
-                {` `}
-                <a
-                  href="https://github.com/dacrands/StudyFriend"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn"
-                >
-                  GitHub Repo
-                </a>
-              </p>
-            </div>
-          </article>
-          {/* ------------------------
                   BERGEN STEM
           ------------------------ */}
           <article className="card">
@@ -238,6 +179,65 @@ export default () => (
                   className="btn"
                 >
                   Frontend Repo
+                </a>
+              </p>
+            </div>
+          </article>
+                    {/* ------------------------
+                  STUDY FRIEND
+          ------------------------ */}
+          <article className="card">
+            <div className="card__img card__img--has-video">
+              <video
+                preload={"none"}
+                src={StudyFriend}
+                poster={data.studyFriend.childImageSharp.fluid.src}
+                height={212}
+                width={435}
+                playsInline
+                muted
+                controls
+                className="fluid card__img-video"
+                onMouseLeave={e => e.target.pause()}
+                onMouseEnter={e => e.target.play()}
+              ></video>
+              <Img
+                fluid={data.studyFriend.childImageSharp.fluid}
+                alt="Bergen STEM landing page"                                                
+              />
+            </div>
+            <div className="card__content">
+              <h3>Study Friend</h3>
+              <p>
+                Razor pages application
+                made to help people study.
+                Uses ASP.NET Core Identity
+                for user authentication.
+                Deployed app and SQL database
+                using Azure services. Designed responsive user-interface 
+                with Bootstrap 4.
+              </p>
+              <small>
+                ASP.NET Core, Entity Framework, 
+                Razor Pages, Azure Services, Bootstrap 4
+              </small>
+              <p>
+                <a
+                  href="https://studyfriend20191005031140.azurewebsites.net"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn"
+                >
+                  Study Friend
+                </a>
+                {` `}
+                <a
+                  href="https://github.com/dacrands/StudyFriend"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn"
+                >
+                  GitHub Repo
                 </a>
               </p>
             </div>
