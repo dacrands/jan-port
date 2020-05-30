@@ -7,13 +7,11 @@ import SEO from  "../components/SEO"
 const Thanks = () => (
   <Layout>
     <SEO title={"Thanks"} />
-    <div className="center">
-      <div className="success">
+      <div className="box center">
         <h1 className="text__title text--red">Thanks for the message!</h1>
         <p>I'll read it and get back to you</p>
         <Link to="/">Go back home</Link>
       </div>
-    </div>
   </Layout>
 )
 
