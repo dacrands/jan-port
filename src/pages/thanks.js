@@ -4,8 +4,6 @@ import { Link } from "gatsby"
 import Layout from  "../components/Layout"
 import SEO from  "../components/SEO"
 
-import "../styles/main.scss"
-
 const Thanks = () => (
   <Layout>
     <SEO title={"Thanks"} />
