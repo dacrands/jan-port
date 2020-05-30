@@ -1,5 +1,4 @@
 import React from "react"
-import SEO from "./SEO"
 import { useStaticQuery, graphql } from "gatsby"
 
 import "../styles/main.scss"
