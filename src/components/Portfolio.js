@@ -1,5 +1,5 @@
 import React from "react"
-import { StaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 
 import FilesVideo from "../media/videos/justfiles.mp4"
@@ -222,14 +222,12 @@ export default () => (
                 Razor Pages, Azure Services, Bootstrap 4
               </small>
               <p>
-                <a
-                  href="https://studyfriend20191005031140.azurewebsites.net"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  to="/study"
                   className="btn"
                 >
                   Study Friend
-                </a>
+                </Link>
                 {` `}
                 <a
                   href="https://github.com/dacrands/StudyFriend"
