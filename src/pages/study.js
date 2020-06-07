@@ -7,7 +7,7 @@ import SEO from  "../components/SEO"
 
 import StudyFriendVideo from "../media/videos/studyfriend-ui.mp4"
 
-const Thanks = ({data}) => (
+const StudyFriend = ({data}) => (
   <Layout>
     <SEO title={"Study Friend"} />
       <div className="container">
@@ -56,4 +56,4 @@ export const query = graphql`
   }
 `
 
-export default Thanks
+export default StudyFriend
