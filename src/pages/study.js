@@ -36,7 +36,7 @@ const Thanks = ({data}) => (
           <h2>Screenshots</h2>
           <Img
             fluid={data.studyFriend.childImageSharp.fluid}
-            alt="Bergen STEM landing page"                                                
+            alt="Study Friend landing page"                                                
           />
         </div>
       </div>
