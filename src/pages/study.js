@@ -20,7 +20,7 @@ const StudyFriend = ({data}) => (
           </p>
           <Link to="/">Go Back Home</Link>
         </header>
-        <div>
+        <section>
           <h2>In action</h2>
           <video
             preload={"none"}
@@ -31,14 +31,14 @@ const StudyFriend = ({data}) => (
             muted
             controls
           ></video>
-        </div>
-        <div>
+        </section>
+        <section>
           <h2>Screenshots</h2>
           <Img
             fluid={data.studyFriend.childImageSharp.fluid}
             alt="Study Friend landing page"                                                
           />
-        </div>
+        </section>
       </div>
   </Layout>
 )
