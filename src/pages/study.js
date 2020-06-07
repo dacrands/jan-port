@@ -25,7 +25,7 @@ const StudyFriend = ({data}) => (
           <video
             preload={"none"}
             src={StudyFriendVideo}
-            poster={data.studyFriend.childImageSharp.fluid.src}
+            poster={data.videoPoster.childImageSharp.fluid.src}
             width={"100%"}
             playsInline
             muted
@@ -35,8 +35,36 @@ const StudyFriend = ({data}) => (
         <section>
           <h2>Screenshots</h2>
           <Img
-            fluid={data.studyFriend.childImageSharp.fluid}
+            fluid={data.homePage.childImageSharp.fluid}
             alt="Study Friend landing page"                                                
+          />
+          <Img
+            fluid={data.questionsPage.childImageSharp.fluid}
+            alt="Study Friend questions page"                                                
+          />
+          <Img
+            fluid={data.answersPage.childImageSharp.fluid}
+            alt="Study Friend answers page"                                                
+          />
+          <Img
+            fluid={data.editAnswerPage.childImageSharp.fluid}
+            alt="Study Friend edit answer page"                                                
+          />
+          <Img
+            fluid={data.search.childImageSharp.fluid}
+            alt="Study Friend search example"                                                
+          />
+          <Img
+            fluid={data.createTopicPage.childImageSharp.fluid}
+            alt="Study Friend create topic page"                                                
+          />
+          <Img
+            fluid={data.accountPage.childImageSharp.fluid}
+            alt="Study Friend user account page"                                                
+          />
+          <Img
+            fluid={data.aboutPage.childImageSharp.fluid}
+            alt="Study Friend about page"                                                
           />
         </section>
       </div>
@@ -45,10 +73,74 @@ const StudyFriend = ({data}) => (
 
 export const query = graphql`
   query {
-    studyFriend: file(relativePath: { eq: "imgs/study-friend-ui.jpg" }) {
+    videoPoster: file(relativePath: { eq: "imgs/study-friend-ui.jpg" }) {
       childImageSharp {
         id
-        fluid(toFormat: PNG, maxWidth: 600) {
+        fluid(toFormat: PNG) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    homePage: file(relativePath: { eq: "imgs/study/homepage.JPG" }) {
+      childImageSharp {
+        id
+        fluid(toFormat: WEBP) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    questionsPage: file(relativePath: { eq: "imgs/study/questions.JPG" }) {
+      childImageSharp {
+        id
+        fluid(toFormat: WEBP) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    answersPage: file(relativePath: { eq: "imgs/study/answers.JPG" }) {
+      childImageSharp {
+        id
+        fluid(toFormat: WEBP) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    editAnswerPage: file(relativePath: { eq: "imgs/study/edit-answer.JPG" }) {
+      childImageSharp {
+        id
+        fluid(toFormat: WEBP) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    search: file(relativePath: { eq: "imgs/study/search.JPG" }) {
+      childImageSharp {
+        id
+        fluid(toFormat: WEBP) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    createTopicPage: file(relativePath: { eq: "imgs/study/create.JPG" }) {
+      childImageSharp {
+        id
+        fluid(toFormat: WEBP) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    accountPage: file(relativePath: { eq: "imgs/study/account.JPG" }) {
+      childImageSharp {
+        id
+        fluid(toFormat: WEBP) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    aboutPage: file(relativePath: { eq: "imgs/study/about.JPG" }) {
+      childImageSharp {
+        id
+        fluid(toFormat: WEBP) {
           ...GatsbyImageSharpFluid
         }
       }
