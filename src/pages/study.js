@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 import Layout from  "../components/Layout"
 import SEO from  "../components/SEO"
 
-import StudyFriend from "../media/videos/studyfriend-ui.mp4"
+import StudyFriendVideo from "../media/videos/studyfriend-ui.mp4"
 
 const Thanks = ({data}) => (
   <Layout>
@@ -24,7 +24,7 @@ const Thanks = ({data}) => (
           <h2>In action</h2>
           <video
             preload={"none"}
-            src={StudyFriend}
+            src={StudyFriendVideo}
             poster={data.studyFriend.childImageSharp.fluid.src}
             width={"100%"}
             playsInline
