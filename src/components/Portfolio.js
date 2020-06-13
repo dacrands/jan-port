@@ -85,13 +85,11 @@ export default () => (
               <h3>Bergen STEM</h3>
               <p>
                 Progressive web app designed and developed for the STEM program
-                at Bergen Community College. Built with GatsbyJS
-                (React) and the
+                at Bergen Community College. Built with GatsbyJS (React) and the
                 Netlify-CMS, the site showcases student resources, scholarship
                 information, and research projects.
               </p>
-              <small>GatsbyJS
-                (React), Sass, Netlify CMS</small>
+              <small>GatsbyJS (React), Sass, Netlify CMS</small>
               <p>
                 <a
                   href="https://bergenstem.com"
@@ -143,7 +141,7 @@ export default () => (
                 Developed a Flask API that provides user-authentication and CRUD
                 functionality for files hosted on an S3 bucket. Designed and
                 built a responsive and accessible client-app using GatsbyJS
-                (React). 
+                (React).
               </p>
               <small>
                 <strong>Backend: </strong>
@@ -183,7 +181,7 @@ export default () => (
               </p>
             </div>
           </article>
-                    {/* ------------------------
+          {/* ------------------------
                   STUDY FRIEND
           ------------------------ */}
           <article className="card">
@@ -203,29 +201,23 @@ export default () => (
               ></video>
               <Img
                 fluid={data.studyFriend.childImageSharp.fluid}
-                alt="Bergen STEM landing page"                                                
+                alt="Bergen STEM landing page"
               />
             </div>
             <div className="card__content">
               <h3>Study Friend</h3>
               <p>
-                Razor pages application
-                made to help people study.
-                Uses ASP.NET Core Identity
-                for user authentication.
-                Deployed app and SQL database
-                using Azure services. Designed responsive user-interface 
-                with Bootstrap 4.
+                Razor pages application made to help people study. Uses ASP.NET
+                Core Identity for user authentication. Deployed app and SQL
+                database using Azure services. Designed responsive
+                user-interface with Bootstrap 4.
               </p>
               <small>
-                ASP.NET Core, Entity Framework, 
-                Razor Pages, Azure Services, Bootstrap 4
+                ASP.NET Core, Entity Framework, Razor Pages, Azure Services,
+                Bootstrap 4
               </small>
               <p>
-                <Link
-                  to="/study"
-                  className="btn"
-                >
+                <Link to="/study" className="btn">
                   Study Friend
                 </Link>
                 {` `}
@@ -266,10 +258,10 @@ export default () => (
             <div className="card__content">
               <h3>To View It</h3>
               <p>
-                An MVC style to-do list application that features a scrolling-stocker
-                ticker, weather information, and a custom background Youtube
-                video. Deployed Flask app and MySQL database on DigitalOcean 
-                using Docker containers.
+                An MVC style to-do list application that features a
+                scrolling-stocker ticker, weather information, and a custom
+                background Youtube video. Deployed Flask app and MySQL database
+                on DigitalOcean using Docker containers.
                 {/* Uses JSON Web Tokens for email verifications and password
                 resets. */}
               </p>

@@ -8,7 +8,7 @@ import Contact from "../components/Contact"
 
 export default () => (
   <Layout>
-    <SEO title={"Welcome"}/>
+    <SEO title={"Welcome"} />
     <Header />
     <Portfolio />
     <Contact />

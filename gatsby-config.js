@@ -2,13 +2,13 @@ module.exports = {
   siteMetadata: {
     title: `David Crandall Software Engineer`,
     description: `David Crandall is a software engineer in the greater New York City area`,
-    author: `David Crandall`
+    author: `David Crandall`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-google-analytics`,
-      options: {      
+      options: {
         trackingId: "UA-127816565-1",
       },
     },
@@ -25,7 +25,7 @@ module.exports = {
       options: {
         name: "David-Crandall",
         icon: "src/media/imgs/icon.png",
-      }
+      },
     },
     `gatsby-plugin-sass`,
   ],
